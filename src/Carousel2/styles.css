@@ -1,0 +1,44 @@
+.rm-main-head{
+    color: #313131;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      margin-bottom: 35px;
+      position: relative;
+      line-height: 1.4;
+  }
+.rm-main-head >span {
+    display: block;
+    font-weight: 300;
+}
+.sc-gKXOVf ghbVGk{
+  background-color: teal;
+}
+.ratetxtcar2{
+  display: flex;
+  justify-content: space-around;
+}
+.seemorediv{
+  height:30px;
+   width:80px;
+   border:1px solid red;
+   /* margin-top: 30px; */
+   color:red;
+   margin:auto ;
+   padding:5px;
+   box-sizing: border-box;
+   
+}
+.seemorediv:hover{
+  
+   color:white;
+   background-color: red;
+   
+}
+.cor2upperdiv{
+  width: 100px;
+  height: 100px;
+  /* padding-left: 50px; */
+  /* margin-left: 50px; */
+  /* background-color: teal; */
+}
