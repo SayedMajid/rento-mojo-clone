@@ -16,7 +16,7 @@
     - Priyanshu
     - Rahim
 
-#### Day 1 ( Tuesday ,  Deadline : 12:00 PM , Tommorow 24-08-2022 ) --> 7 Issues , 13 Tasks (HomePage)
+#### Day 1 ( Tuesday ,  Deadline : 6:00 PM , Tommorow 24-08-2022 ) --> 7 Issues , 13 Tasks (HomePage)
 
     - Abdullah --> Carousal 2 | 1 Task 
     - Majid --> Customer Review | 2 Task 
