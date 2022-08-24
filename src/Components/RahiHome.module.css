@@ -1,0 +1,10 @@
+#mainBox {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+  border-radius: 8px;
+}
+
+#more:hover {
+  cursor: pointer;
+  margin-left: 0.2rem;
+  text-decoration: underline;
+}
