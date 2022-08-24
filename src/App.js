@@ -1,19 +1,14 @@
-import './App.css';
-import { RahiHome } from './Components/RahiHome';
+import "./App.css";
+import { RahiHome } from "./Components/RahiHome";
 import Navbar from "./Components/Navbar";
 import Carouselhome1 from "./Components/Carouselhome1";
 
 function App() {
   return (
     <div>
-       <Navbar/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-
-       <Carouselhome1/>
-       <RahiHome />
+      <Navbar />
+      <Carouselhome1 />
+      <RahiHome />
     </div>
   );
 }

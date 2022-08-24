@@ -13,7 +13,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 500,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 4000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -39,12 +39,14 @@ export default function Carouselhome1() {
   return (
     <Box
       position={"relative"}
-      height={"600px"}
+      height={{base:"400px",md:"500px",lg:"600px"}}
       width={"full"}
       overflow={"hidden"}
       borderRadius="20px"
+      marginTop={{base:"-80px",md:"0px",lg:"100px"}}
       
     >
+
       {/* CSS files for react-slick */}
       {/* <link
         rel="stylesheet"
