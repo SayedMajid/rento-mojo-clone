@@ -46,6 +46,7 @@ const Categories = () => {
     >
       {data.map((item) => (
         <Box
+          key={item.title}
           display="flex"
           flexDirection="column"
           border="1px solid #d4e0e9"

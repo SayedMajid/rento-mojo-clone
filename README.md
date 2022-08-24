@@ -26,11 +26,11 @@
 
 #### Day 2 --> ( Wednesday, 24-08-2022 ) --> 3 Issues , 6 Tasks (Products Landing Page)
 
-    - Abdullah --> 
-    - Majid --> 
-    - Narayan --> 
-    - Priyanshu --> 
-    - Rahim --> 
+    - Abdullah --> Carousel Pending
+    - Majid --> Completed   
+    - Narayan --> Completed
+    - Priyanshu --> Completed
+    - Rahim --> Completed
 
 #### Day 3 --> ( Thursday ) --> 3 Issues, 7 Tasks | Per Individual 
 
