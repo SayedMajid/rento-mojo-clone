@@ -1,5 +1,4 @@
 import "./App.css";
-import { RahiHome } from "./Components/RahiHome";
 import Navbar from "./Components/Navbar";
 import AllRoutes from "./Pages/AllRoutes";
 
@@ -8,8 +7,6 @@ function App() {
     <div>
       <Navbar />
       <AllRoutes />
-      <Carouselhome1 />
-      <RahiHome />
     </div>
   );
 }
