@@ -7,6 +7,11 @@ function App() {
   return (
     <div>
        <Navbar/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+
        <Carouselhome1/>
        <RahiHome />
     </div>

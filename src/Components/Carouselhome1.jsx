@@ -43,6 +43,7 @@ export default function Carouselhome1() {
       width={"full"}
       overflow={"hidden"}
       borderRadius="20px"
+      
     >
       {/* CSS files for react-slick */}
       {/* <link
