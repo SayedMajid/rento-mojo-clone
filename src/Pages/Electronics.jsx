@@ -11,16 +11,15 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import ProductsCard from "../misc/ProductsCard";
 import Slider from "../misc/ProductsPageslider";
 import { getElectronicsData } from "../Redux/App/actions";
 
 const Electronics = () => {
   const [sliderValue, setSliderValue] = React.useState(0);
-
   const dispatch = useDispatch();
-
   const electronicsData = useSelector((store) => store.App.electronics);
-  console.log(electronicsData);
+  
 
   useEffect(() => {
     dispatch(getElectronicsData());
@@ -32,7 +31,6 @@ const Electronics = () => {
         {/* Filters and relevance box */}
         <Box
           w={{ xl: "80%", md: "80%", base: "95%" }}
-          border="1px solid black"
           m="20px auto"
           display="flex"
           justifyContent="space-between"
@@ -61,24 +59,27 @@ const Electronics = () => {
         <Box
           display="flex"
           m="10px auto 20px"
-          border="1px solid red"
           w={{ xl: "80%", md: "80%", base: "95%" }}
           boxSizing="border-box"
           justifyContent="space-between"
           fontFamily="sans-serif"
         >
           {/* Sidebar Box */}
-          <Box h="max-content" w="262.5px" display={{ base: "none", md: "none" , xl:"inline"}} >
+          <Box
+            h="max-content"
+            w={{ xl: "262.5px" }}
+            display={{ base: "none", md: "none", xl: "inline" }}
+          >
             {/* Choose rental tenure */}
             <Flex
-              border="1px solid gray"
+              border="1px solid #e9e9e9"
               w="100%"
               h="max-content"
               flexDirection="column"
               boxSizing="border-box"
               p="20px"
               borderRadius="2px"
-              mb='16px'
+              mb="16px"
             >
               <Text mb="10px" fontSize={"14px"}>
                 CHOOSE RENTAL TENURE
@@ -92,12 +93,12 @@ const Electronics = () => {
             </Flex>
             {/* Product Type Box */}
             <Box
-              border="1px solid gray"
+              border="1px solid #e9e9e9"
               boxSizing="border-box"
               p="20px"
               display="flex"
               flexDirection="column"
-              mb='16px'
+              mb="16px"
             >
               <Text fontSize="14px" mb="16px">
                 PRODUCT TYPE
@@ -119,12 +120,12 @@ const Electronics = () => {
             </Box>
             {/* Availability */}
             <Box
-              border="1px solid gray"
+              border="1px solid #e9e9e9"
               boxSizing="border-box"
               p="20px"
               display="flex"
               flexDirection="column"
-              mb='16px'
+              mb="16px"
             >
               <Text mb="16px" fontSize="14px">
                 AVAILABILITY
@@ -165,7 +166,6 @@ const Electronics = () => {
           </Box>
           {/* Products Box */}
           <Box
-            border="1px solid blue"
             w={{ xl: "74%", md: "100%", base: "100%" }}
             h="max-content"
             display={{ base: "grid", md: "grid", xl: "grid", "2xl": "grid" }}
@@ -175,14 +175,10 @@ const Electronics = () => {
               xl: "repeat(3,1fr)",
             }}
             alignContent="center"
-            gap={[4,6,8,10]}
+            gap={[4, 6, 10]}
           >
             {electronicsData?.map((item) => (
-              <Box
-                h={{ base: "258px", md: "313px", xl: "354px", "2xl": "437px" }}
-                w={{ base: "auto", md: "auto", xl: "auto", "2xl": "auto" }}
-                border="1px solid red"
-              ></Box>
+              <ProductsCard key={item.id} {...item} />
             ))}
           </Box>
         </Box>
