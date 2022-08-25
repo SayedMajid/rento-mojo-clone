@@ -4,6 +4,7 @@
 
 import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { useNavigate } from "react-router-dom"
 
 const Categories = () => {
   const data = [
@@ -33,6 +34,12 @@ const Categories = () => {
     },
   ];
 
+  const navigate = useNavigate();
+
+  const handleClick = (name) => {
+    navigate(`/${name}`, { replace : true })
+  }
+
   return (
     <Box
       display={{ xl: "flex", md: "grid", base: "grid" }}
@@ -57,6 +64,7 @@ const Categories = () => {
           borderRadius={{ xl: "10px", md: "8px", base: "6px" }}
           _hover={{ boxShadow: "0px 10px 10px #d4e0e9" }}
           transition="all 0.2s ease-in"
+          onClick={() => handleClick(item.title)}
         >
           <Box
             h={{ base: "36px", md: "55px", xl: "55px" }}
