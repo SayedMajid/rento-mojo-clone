@@ -8,3 +8,16 @@ export const getElectronicsData = () => (dispatch) => {
       dispatch({ type: types.GET_ELECTRONICS_DATA_SUCCESS, payload: res.data })
     );
 };
+
+
+
+
+export const getAppliances = (params)=>(dispatch) => {
+  dispatch({ type: types.GET_APPLIANCES_REQUEST });
+  axios
+    .get("http://localhost:8080/appliances",params)
+    .then((r) =>
+      dispatch({ type: types.GET_APPLIANCES_SUCCESS, payload: r.data })
+    )
+    .catch((e) => dispatch({ type: types.GET_APPLIANCES_FAILURE, payload: e }));
+};
