@@ -4,8 +4,6 @@ import { Box, Divider, Flex, Image, Text } from "@chakra-ui/react";
 const ProductsCard = ({ days, delivery, id, image, price, title }) => {
   const [heart, setHeart] = useState(false);
 
-  console.log(days, delivery, id, image, price, title);
-
   return (
     <Box
       position="relative"

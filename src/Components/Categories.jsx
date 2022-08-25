@@ -30,7 +30,7 @@ const Categories = () => {
     },
     {
       img: "https://img.icons8.com/ios/2x/pc-on-desk.png",
-      title: "WFH Essentials",
+      title: "WfhEssentials",
     },
   ];
 
