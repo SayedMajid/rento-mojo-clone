@@ -1,4 +1,348 @@
 {
+<<<<<<< HEAD
+  "wfh_All": [
+    {
+      "id": 1,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 2,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 3,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 4,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 5,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 6,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    },
+    {
+      "id": 7,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 8,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 9,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 10,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 11,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 12,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    },
+    {
+      "id": 13,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 14,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 15,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 16,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 17,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 18,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    }
+  ],
+  "wfh_Furniture": [
+    {
+      "id": 1,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 2,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    }, {
+      "id": 5,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 6,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    },
+    {
+      "id": 7,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 8,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 9,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 10,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 11,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 12,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    },
+    {
+      "id": 13,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 14,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 15,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 16,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 17,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 18,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    }
+  ],
+  "wfh_Fiteness_Equipment": [
+    {
+      "id": 3,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 4,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 7,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 8,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 9,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 10,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 11,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 12,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    },
+    {
+      "id": 13,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 14,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
+    },
+    {
+      "id": 15,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
+    },
+    {
+      "id": 16,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
+    },
+    {
+      "id": 17,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
+    },
+    {
+      "id": 18,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
+    }
+  ]
+}
+=======
   "product": [
     {
       "id": 1,
@@ -2538,3 +2882,4 @@
     }
   ]
 }
+>>>>>>> d2c9ddeddf14ab7e38877c27dd703cb43a880e1c
