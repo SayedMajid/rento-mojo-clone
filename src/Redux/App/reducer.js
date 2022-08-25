@@ -18,6 +18,8 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
+
+
     case types.GET_APPLIANCES_REQUEST:
       return {
         ...state,
