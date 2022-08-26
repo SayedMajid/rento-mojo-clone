@@ -25,7 +25,7 @@ const Navbar = () => {
       alignItems={"center"}
       padding="10px"
       justifyContent={{lg:"space-between",md:"space-between",base:"space-between"}}
-      position={"fixed"}
+      position={"sticky"}
       width={"100%"}
       zIndex={"999"}
       top="0"

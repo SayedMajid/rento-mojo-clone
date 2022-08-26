@@ -142,7 +142,8 @@
       "title": "Marios Office Chair",
       "price": "199",
       "o_price": "72"
-    }, {
+    },
+    {
       "id": 5,
       "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
       "title": "Miller Office Chair",
@@ -2878,8 +2879,714 @@
       "category": "Fitness",
       "sub-category": "Treadmill"
     }
+  ],
+  "electronics": [
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oneplus-7/92530",
+      "image": "https://p.rmjo.in/productSquare/lbf7407m-500x500.jpg",
+      "title": "OnePlus 7 (Mirror Gray)",
+      "price": "1109",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 1
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oneplus-7t-frosted-silver/101123",
+      "image": "https://p.rmjo.in/productSquare/d0ecgei2-500x500.jpg",
+      "title": "OnePlus 7T ( Frosted Silver )",
+      "price": "1309",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 2
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-s10plus/110059",
+      "image": "https://p.rmjo.in/productSquare/yhx594uv-500x500.jpg",
+      "title": "Samsung Galaxy S10+ (Black)",
+      "price": "1659",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 3
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oneplus-7-pro/91631",
+      "image": "https://p.rmjo.in/productSquare/mxzy0xf9-500x500.jpg",
+      "title": "OnePlus 7 Pro (Mirror Gray)",
+      "price": "1669",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 4
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-xs/104221",
+      "image": "https://p.rmjo.in/productSquare/fusk2mmn-500x500.jpg",
+      "title": "Apple iPhone XS (Gold)",
+      "price": "3279",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 5
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-note10/97432",
+      "image": "https://p.rmjo.in/productSquare/fhonufah-500x500.jpg",
+      "title": "Samsung Galaxy Note 10 (Aura Black)",
+      "price": "2229",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 6
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-xs-max/104563",
+      "image": "https://p.rmjo.in/productSquare/4kco0n7s-500x500.jpg",
+      "title": "Apple iPhone XS Max (Silver)",
+      "price": "3719",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 7
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-10/104792",
+      "image": "https://p.rmjo.in/productSquare/glmhtqql-500x500.jpg",
+      "title": "Apple iPhone X (Silver)",
+      "price": "3039",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 8
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-11-pro-midnight-green/101565",
+      "image": "https://p.rmjo.in/productSquare/byeagjss-500x500.jpg",
+      "title": "Apple iPhone 11 Pro (Midnight Green)",
+      "price": "3349",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 9
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-dell-vostro-3490/105220",
+      "image": "https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg",
+      "title": "Dell Vostro 3490, Intel Core i3 processor , 10th Gen - (8 GB / 1 TB HDD / Win 10 Home , 14 inch, Black)",
+      "price": "1229",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 10
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-macbook-air/40996",
+      "image": "https://p.rmjo.in/productSquare/x42n9zo5-500x500.jpg",
+      "title": "MacBook Air Intel Core i5 processor , 5th Gen - ( 8 GB / 128 GB SSD / Mac High Sierra OS , 13.3 inch, Silver )",
+      "price": "2169",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 11
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-laptop-macbook-pro-i5/113947",
+      "image": "https://p.rmjo.in/productSquare/ujzfusgx-500x500.jpg",
+      "title": "MacBook Pro i5 - Powered by MF",
+      "price": "8482",
+      "days": "5 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 12
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-laptop-windows-i5-4gb/113944",
+      "image": "https://p.rmjo.in/productSquare/gxeb5vcy-500x500.jpg",
+      "title": "Windows i5/4GB - Powered by MF",
+      "price": "3750",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 13
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-laptop-windows-i5-8gb/113945",
+      "image": "https://p.rmjo.in/productSquare/0d2mfrwr-500x500.jpg",
+      "title": "Windows i5/8GB - Powered by MF",
+      "price": "4375",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 14
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-laptop-windows-i5-16gb/113946",
+      "image": "https://p.rmjo.in/productSquare/siecu434-500x500.jpg",
+      "title": "Windows i5/16GB - Powered by MF",
+      "price": "4821",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 15
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-laptop-macbook-pro-i7/113948",
+      "image": "https://p.rmjo.in/productSquare/hyob6tn7-500x500.jpg",
+      "title": "MacBook Pro i7 - Powered by MF",
+      "price": "12373",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 16
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-laptop-macbook-air/113949",
+      "image": "https://p.rmjo.in/productSquare/7gqbt0tx-500x500.jpg",
+      "title": "MacBook Air - Powered by MF",
+      "price": "6606",
+      "days": "5 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 17
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-google-home/24026",
+      "image": "https://p.rmjo.in/productSquare/trvavxl7-500x500.jpg",
+      "title": "Google Home",
+      "price": "259",
+      "days": "3 days",
+      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
+      "id": 18
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-11/98742",
+      "image": "https://p.rmjo.in/productSquare/5bcb7q0f-500x500.jpg",
+      "title": "Apple iPhone 11 (Black)",
+      "price": "2159",
+      "availability": "Out of stock",
+      "id": 19
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-redmi-k20-pro-carbon-black-128gb/97888",
+      "image": "https://p.rmjo.in/productSquare/c601su0m-500x500.jpg",
+      "title": "Redmi K20 Pro (Carbon Black)",
+      "price": "929",
+      "availability": "Out of stock",
+      "id": 20
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-j8/69774",
+      "image": "https://p.rmjo.in/productSquare/z0kad2cr-500x500.jpg",
+      "title": "Samsung Galaxy J8 (Black)",
+      "price": "489",
+      "availability": "Out of stock",
+      "id": 21
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-xr-64gb/54368",
+      "image": "https://p.rmjo.in/productSquare/vmbb6qhr-500x500.jpg",
+      "title": "Apple iPhone XR 64GB (Black)",
+      "price": "1839",
+      "availability": "Out of stock",
+      "id": 22
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a7/104597",
+      "image": "https://p.rmjo.in/productSquare/4gv7oyvc-500x500.jpg",
+      "title": "Samsung Galaxy A7 (Gold)",
+      "price": "689",
+      "availability": "Out of stock",
+      "id": 23
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-nokia-9-pure-view-blue-128gb/97885",
+      "image": "https://p.rmjo.in/productSquare/rnq0lpdu-500x500.jpg",
+      "title": "Nokia 9 Pureview (Blue)",
+      "price": "1549",
+      "availability": "Out of stock",
+      "id": 24
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-redmi-k20-carbon-black-64gb/97889",
+      "image": "https://p.rmjo.in/productSquare/bm2uhtm8-500x500.jpg",
+      "title": "Redmi K20 (Carbon Black)",
+      "price": "739",
+      "availability": "Out of stock",
+      "id": 25
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-11-pro/98800",
+      "image": "https://p.rmjo.in/productSquare/0syr4nkn-500x500.jpg",
+      "title": "Apple iPhone 11 Pro (Space Grey)",
+      "price": "3349",
+      "availability": "Out of stock",
+      "id": 26
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-6s-space-grey/101126",
+      "image": "https://p.rmjo.in/productSquare/fgcl0o0i-500x500.jpg",
+      "title": "Apple iPhone 6S (Space Grey)",
+      "price": "799",
+      "availability": "Out of stock",
+      "id": 27
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oneplus-7t-pro-haze-blue/102321",
+      "image": "https://p.rmjo.in/productSquare/hzh6xems-500x500.jpg",
+      "title": "OnePlus 7T Pro (Haze Blue)",
+      "price": "1849",
+      "availability": "Out of stock",
+      "id": 28
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-8/104349",
+      "image": "https://p.rmjo.in/productSquare/vw8fgse9-500x500.jpg",
+      "title": "Apple iPhone 8 (Gold)",
+      "price": "2169",
+      "availability": "Out of stock",
+      "id": 29
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-note-10-plus/104364",
+      "image": "https://p.rmjo.in/productSquare/r64xg3yw-500x500.jpg",
+      "title": "Galaxy Note 10 Plus (Aura Glow)",
+      "price": "2729",
+      "availability": "Out of stock",
+      "id": 30
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-vivo-v11-pro/104502",
+      "image": "https://p.rmjo.in/productSquare/qmf066y6-500x500.jpg",
+      "title": "Vivo V11 Pro ( Gold )",
+      "price": "839",
+      "availability": "Out of stock",
+      "id": 31
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oppo-a7-glaze-blue/104504",
+      "image": "https://p.rmjo.in/productSquare/dgsj2eoz-500x500.jpg",
+      "title": "Oppo A7 ( Glaze Blue )",
+      "price": "579",
+      "availability": "Out of stock",
+      "id": 32
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oppo-reno2-z/104554",
+      "image": "https://p.rmjo.in/productSquare/40nn18do-500x500.jpg",
+      "title": "Oppo Reno 2 Z (Luminous Black)",
+      "price": "969",
+      "availability": "Out of stock",
+      "id": 33
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oppo-a7-glaring-gold/104560",
+      "image": "https://p.rmjo.in/productSquare/fycty5jp-500x500.jpg",
+      "title": "Oppo A7 ( Glaring Gold )",
+      "price": "579",
+      "availability": "Out of stock",
+      "id": 34
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a70/104565",
+      "image": "https://p.rmjo.in/productSquare/ioqc6iq4-500x500.jpg",
+      "title": "Samsung Galaxy A70 (Blue)",
+      "price": "979",
+      "availability": "Out of stock",
+      "id": 35
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-vivo-y17-mineral-blue/104566",
+      "image": "https://p.rmjo.in/productSquare/jsjogms9-500x500.jpg",
+      "title": "Vivo Y17 ( Mineral Blue )",
+      "price": "539",
+      "availability": "Out of stock",
+      "id": 36
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-s10e/104567",
+      "image": "https://p.rmjo.in/productSquare/vhk0dft5-500x500.jpg",
+      "title": "Galaxy S10e (Black)",
+      "price": "1789",
+      "availability": "Out of stock",
+      "id": 37
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-vivo-v15-pro/104568",
+      "image": "https://p.rmjo.in/productSquare/5mqdpbn0-500x500.jpg",
+      "title": "Vivo V15 Pro (Ruby Red)",
+      "price": "879",
+      "availability": "Out of stock",
+      "id": 38
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oppo-f11/104626",
+      "image": "https://p.rmjo.in/productSquare/t1yb222s-500x500.jpg",
+      "title": "Oppo F11 (Fluorite Purple)",
+      "price": "589",
+      "availability": "Out of stock",
+      "id": 39
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a50-6gb/104679",
+      "image": "https://p.rmjo.in/productSquare/nmc2vcgx-500x500.jpg",
+      "title": "Samsung Galaxy A50 (White, 6GB RAM)",
+      "price": "739",
+      "availability": "Out of stock",
+      "id": 40
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-vivo-v11-pro-supernova-red/104758",
+      "image": "https://p.rmjo.in/productSquare/tikbvx4g-500x500.jpg",
+      "title": "Vivo V11 Pro (Supernova Red)",
+      "price": "849",
+      "availability": "Out of stock",
+      "id": 41
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-redmi-note-6-pro-red/104763",
+      "image": "https://p.rmjo.in/productSquare/bsoatj8n-500x500.jpg",
+      "title": "Redmi Note 6 Pro (Red)",
+      "price": "569",
+      "availability": "Out of stock",
+      "id": 42
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a9/104793",
+      "image": "https://p.rmjo.in/productSquare/b1ya80ae-500x500.jpg",
+      "title": "Galaxy A9 (Lemonade Blue)",
+      "price": "1139",
+      "availability": "Out of stock",
+      "id": 43
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-j8-blue/104991",
+      "image": "https://p.rmjo.in/productSquare/d63957sv-500x500.jpg",
+      "title": "Samsung Galaxy J8 (Blue)",
+      "price": "539",
+      "availability": "Out of stock",
+      "id": 44
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-xs-silver/105319",
+      "image": "https://p.rmjo.in/productSquare/grnwuvgv-500x500.jpg",
+      "title": "Apple iPhone XS (Silver)",
+      "price": "3389",
+      "availability": "Out of stock",
+      "id": 45
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a50-4gb/106692",
+      "image": "https://p.rmjo.in/productSquare/r05w1ix4-500x500.jpg",
+      "title": "Samsung Galaxy A50 (White, 4GB RAM)",
+      "price": "629",
+      "availability": "Out of stock",
+      "id": 46
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a50-blue/106696",
+      "image": "https://p.rmjo.in/productSquare/bvpxqjj5-500x500.jpg",
+      "title": "Galaxy A50 (Blue)",
+      "price": "619",
+      "availability": "Out of stock",
+      "id": 47
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-galaxy-a50s-prism-crush-white/106704",
+      "image": "https://p.rmjo.in/productSquare/cji6uh7h-500x500.jpg",
+      "title": "Galaxy A50s (Prism Crush White)",
+      "price": "779",
+      "availability": "Out of stock",
+      "id": 48
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-s10-plus-white/106712",
+      "image": "https://p.rmjo.in/productSquare/y7bmqk1a-500x500.jpg",
+      "title": "Galaxy S10+ (White)",
+      "price": "2399",
+      "availability": "Out of stock",
+      "id": 49
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-note9-blue/106726",
+      "image": "https://p.rmjo.in/productSquare/d7kwvrrk-500x500.jpg",
+      "title": "Galaxy Note 9 (Blue)",
+      "price": "2319",
+      "availability": "Out of stock",
+      "id": 50
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-8-silver/106771",
+      "image": "https://p.rmjo.in/productSquare/6zyn96ba-500x500.jpg",
+      "title": "Apple iPhone 8 (Silver)",
+      "price": "2049",
+      "availability": "Out of stock",
+      "id": 51
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oppo-a5/106795",
+      "image": "https://p.rmjo.in/productSquare/6pozheic-500x500.jpg",
+      "title": "Oppo A5 (Blue)",
+      "price": "479",
+      "availability": "Out of stock",
+      "id": 52
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-a30/106808",
+      "image": "https://p.rmjo.in/productSquare/16h705m1-500x500.jpg",
+      "title": "Samsung Galaxy A30 (Blue)",
+      "price": "529",
+      "availability": "Out of stock",
+      "id": 53
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-redmi-k20-pro-blue/106861",
+      "image": "https://p.rmjo.in/productSquare/0a2dwyu2-500x500.jpg",
+      "title": "Redmi K20 Pro (Blue)",
+      "price": "1049",
+      "availability": "Out of stock",
+      "id": 54
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-xr-red/106867",
+      "image": "https://p.rmjo.in/productSquare/1i5bahsa-500x500.jpg",
+      "title": "Apple iPhone XR (Red)",
+      "price": "2189",
+      "availability": "Out of stock",
+      "id": 55
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-7-plus/110143",
+      "image": "https://p.rmjo.in/productSquare/le2jcaof-500x500.jpg",
+      "title": "Apple iPhone 7 Plus (Gold)",
+      "price": "1309",
+      "availability": "Out of stock",
+      "id": 56
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-note8/22186",
+      "image": "https://p.rmjo.in/productSquare/xxdjq0k2-500x500.jpg",
+      "title": "Galaxy Note 8 (Black)",
+      "price": "1749",
+      "availability": "Out of stock",
+      "id": 57
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-s9/22195",
+      "image": "https://p.rmjo.in/productSquare/t0rotvxl-500x500.jpg",
+      "title": "Samsung Galaxy S9 (Black)",
+      "price": "1589",
+      "availability": "Out of stock",
+      "id": 58
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-google-pixel-2-black/22202",
+      "image": "https://p.rmjo.in/productSquare/tmp99edr-500x500.jpg",
+      "title": "Google Pixel 2 (Black)",
+      "price": "1699",
+      "availability": "Out of stock",
+      "id": 59
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oneplus-6t/77619",
+      "image": "https://p.rmjo.in/productSquare/amn1b6n3-500x500.jpg",
+      "title": "OnePlus 6T (Mirror Black)",
+      "price": "1199",
+      "availability": "Out of stock",
+      "id": 60
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-redmi-note-6-pro/77621",
+      "image": "https://p.rmjo.in/productSquare/6my2u1tu-500x500.jpg",
+      "title": "Redmi Note 6 Pro (Black)",
+      "price": "399",
+      "availability": "Out of stock",
+      "id": 61
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-poco-f1/77620",
+      "image": "https://p.rmjo.in/productSquare/swo3auxj-500x500.jpg",
+      "title": "Poco F1",
+      "price": "669",
+      "availability": "Out of stock",
+      "id": 62
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-honor-8x/84707",
+      "image": "https://p.rmjo.in/productSquare/6ly5ckk0-500x500.jpg",
+      "title": "Honor 8X (Blue)",
+      "price": "609",
+      "availability": "Out of stock",
+      "id": 63
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oppo-f11-pro/91635",
+      "image": "https://p.rmjo.in/productSquare/ng1wgdjv-500x500.jpg",
+      "title": "Oppo F11 Pro (Thunder Black)",
+      "price": "759",
+      "availability": "Out of stock",
+      "id": 64
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-iphone-xr-128gb/104596",
+      "image": "https://p.rmjo.in/productSquare/siehnbg7-500x500.jpg",
+      "title": "Apple iPhone XR 128GB (White)",
+      "price": "2199",
+      "availability": "Out of stock",
+      "id": 65
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-lenovo-ideapad-s340/106162",
+      "image": "https://p.rmjo.in/productSquare/giv8gyoz-500x500.jpg",
+      "title": "Lenovo IdeaPad S340, Intel Core i3 processor, 10th Gen - (8GB / 1TB HDD / Win 10 Home, 14 inch, Platinum Grey)",
+      "price": "1229",
+      "availability": "Out of stock",
+      "id": 66
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-hp-elitebook-820-g3/105286",
+      "image": "https://p.rmjo.in/productSquare/pjxdupjf-500x500.jpg",
+      "title": "HP EliteBook 820 G3, Intel Core i5 processor, 6th Gen - (8 GB / 500 GB HDD / Win 10 Home, 12.5 inch, Silver)",
+      "price": "1029",
+      "availability": "Out of stock",
+      "id": 67
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-hp-15-notebook/68638",
+      "image": "https://p.rmjo.in/productSquare/nheby11s-500x500.jpg",
+      "title": "HP 15 Notebook , Intel Core i3 processor , 7th Gen  - (4GB / 1TB HDD / Win 10 Home OS / 15.6 inch/ Silver )",
+      "price": "1069",
+      "availability": "Out of stock",
+      "id": 68
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-dell-latitude-3490/40997",
+      "image": "https://p.rmjo.in/productSquare/w1un86lr-500x500.jpg",
+      "title": "Dell Latitude , Intel Core i5 processor , 8th Gen - ( 8 GB / 500 GB HDD / Win 10 Pro OS , 14 inch, Black)",
+      "price": "2069",
+      "availability": "Out of stock",
+      "id": 69
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-lenovo-ideapad-3/106226",
+      "image": "https://p.rmjo.in/productSquare/298cbqj0-500x500.jpg",
+      "title": "Lenovo IdeaPad 3, Intel Core i5 processor, 10th Gen - (8GB / 1TB HDD / Win 10 Home, 15.6 inch, Platinum Grey)",
+      "price": "1489",
+      "availability": "Out of stock",
+      "id": 70
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-new-macbook-air/105915",
+      "image": "https://p.rmjo.in/productSquare/66zdf9n1-500x500.jpg",
+      "title": "New Apple MacBook Air 13.3 inch (Intel Core i3 10th Gen/8GB/256GB/macOS High Sierra Home/Space Grey)",
+      "price": "2809",
+      "availability": "Out of stock",
+      "id": 71
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-macbook-pro/40994",
+      "image": "https://p.rmjo.in/productSquare/9vd42o0s-500x500.jpg",
+      "title": "MacBook Pro Intel Core i5 processor , 7th Gen - ( 8 GB / 128 GB SSD / Mac High Sierra OS,13.3 inch,Space Grey )",
+      "price": "3429",
+      "availability": "Out of stock",
+      "id": 72
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-lenovo-ideapad-330/68639",
+      "image": "https://p.rmjo.in/productSquare/cfa7meld-500x500.jpg",
+      "title": "Lenovo Ideapad 330 , Intel Core i3 processor , 7th Gen  - (4GB / 1TB HDD / Win 10 Home OS / 15.6 inch / Platinum Grey)",
+      "price": "1169",
+      "availability": "Out of stock",
+      "id": 73
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-avita-liber/102364",
+      "image": "https://p.rmjo.in/productSquare/pjszprnr-500x500.jpg",
+      "title": "Avita Liber, Intel Core i5, 8th Gen - (8GB / 256GB SSD / Win 10 Home OS / 14-inch / Space Grey)",
+      "price": "1309",
+      "availability": "Out of stock",
+      "id": 74
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-windows-16gb-ram-256gb-ssd-500gb-hdd/113734",
+      "image": "https://p.rmjo.in/productSquare/2z3gd88n-500x500.jpg",
+      "title": "Windows Core i7 4th/5th Gen 16GB RAM 256GB SSD / 500GB HDD",
+      "price": "4553",
+      "availability": "Out of stock",
+      "id": 75
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-windows-16gb-ram-512gb-ssd-1tb-hdd/113735",
+      "image": "https://p.rmjo.in/productSquare/etaw8fan-500x500.jpg",
+      "title": "Windows Core i7 4th/5th Gen 16GB RAM 512GB SSD / 1TB HDD",
+      "price": "4981",
+      "availability": "Out of stock",
+      "id": 76
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-windows-8gb-ram-256gb-ssd-500gb-hdd/113736",
+      "image": "https://p.rmjo.in/productSquare/recuipb6-500x500.jpg",
+      "title": "Windows Core i5 4th/5th Gen 8GB RAM 256GB SSD / 500GB HDD",
+      "price": "3129",
+      "availability": "Out of stock",
+      "id": 77
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-macbook-pro-16gb-ram-512gb-ssd/113737",
+      "image": "https://p.rmjo.in/productSquare/5qvwh1o4-500x500.jpg",
+      "title": "Macbook Pro i7 2015 16GB RAM 512GB SSD Catalina OS",
+      "price": "9106",
+      "availability": "Out of stock",
+      "id": 78
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-macbook-pro-8gb-ram-256gb-ssd/113738",
+      "image": "https://p.rmjo.in/productSquare/d62r9noo-500x500.jpg",
+      "title": "Macbook Pro i5 2015 8GB RAM 256GB SSD Catalina OS",
+      "price": "5410",
+      "availability": "Out of stock",
+      "id": 79
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-dell-xps-9370/40998",
+      "image": "https://p.rmjo.in/productSquare/140lcwv3-500x500.jpg",
+      "title": "Dell XPS 13 , Intel Core i5 processor , 8th Gen - ( 8 GB / 256 GB SSD / Win 10 Pro OS , 13.3 inch,Silver )",
+      "price": "4139",
+      "availability": "Out of stock",
+      "id": 80
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-amazon-fire-tv-stick-with-alexa-voice-remote/91637",
+      "image": "https://p.rmjo.in/productSquare/rsuzkom0-500x500.jpg",
+      "title": "Amazon Fire TV Stick",
+      "price": "129",
+      "availability": "Out of stock",
+      "id": 81
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-amazon-echo/91636",
+      "image": "https://p.rmjo.in/productSquare/wph9nyr6-500x500.jpg",
+      "title": "Amazon Echo",
+      "price": "229",
+      "availability": "Out of stock",
+      "id": 82
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-boat-aavante-bar/98194",
+      "image": "https://p.rmjo.in/productSquare/knrbmajt-500x500.jpg",
+      "title": "boAt AAVANTE",
+      "price": "189",
+      "availability": "Out of stock",
+      "id": 83
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-samsung-galaxy-tab-s4/85184",
+      "image": "https://p.rmjo.in/productSquare/dvlj6ic5-500x500.jpg",
+      "title": "Samsung Galaxy Tab S4 (Black)",
+      "price": "1789",
+      "availability": "Out of stock",
+      "id": 84
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-ipad-pro-11/85188",
+      "image": "https://p.rmjo.in/productSquare/ojeg5074-500x500.jpg",
+      "title": "Apple iPad Pro 11 (Space Grey)",
+      "price": "2769",
+      "availability": "Out of stock",
+      "id": 85
+    },
+    {
+      "image2": "https://www.rentomojo.com/bangalore/electronics/rent-apple-ipad-10-2-inch/101825",
+      "image": "https://p.rmjo.in/productSquare/prlx76wq-500x500.jpg",
+      "title": "Apple iPad 10.2 inch (Grey)",
+      "price": "1369",
+      "availability": "Out of stock",
+      "id": 86
+    }
   ]
 }
-
-  
 
