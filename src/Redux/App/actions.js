@@ -25,7 +25,7 @@ export const getFurnitureData = () => (dispatch) => {
       dispatch({ type: types.GET_FURNITURE_DATA_SUCCESS, payload: res.data })
     );
 
-
+};
 
 
 export const getAppliances = (params)=>(dispatch) => {

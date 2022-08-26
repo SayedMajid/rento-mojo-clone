@@ -24,7 +24,7 @@ const Appliances = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlCategory = searchParams.getAll("category");
   const urlSort = searchParams.get("sortby");
-  const urlstock=searchParams.get("stock");
+  const urlstock = searchParams.get("stock");
 
   const [category, setCategory] = useState(urlCategory || []);
   const [sortby, setSortby] = useState(urlSort || []);
@@ -70,9 +70,19 @@ const Appliances = () => {
   };
 
   //handle stock availability
-  const handleStock=()=>{
+  const handleStock = (e) => {
+    const option = e.target.value;
 
-  }
+    let newStock = [...stock];
+
+    if (stock.includes(option)) {
+      newStock.splice(newStock.indexOf(option), 1);
+    }
+    else{
+      newStock.push(option);
+    }
+    setStock(newStock);
+  };
 
   //handle sorting
 
@@ -92,12 +102,12 @@ const Appliances = () => {
       setSearchParams(params);
     }
     dispatch(getAppliances());
-  }, [setSearchParams, sortby, category]);
+  }, [setSearchParams, sortby, category,stock]);
 
   return (
     <>
       <Box>
-        {/* Filters and relevance box */}  ..
+        {/* Filters and relevance box */} ..
         <Box
           w={{ xl: "80%", md: "80%", base: "95%" }}
           m="20px auto"
