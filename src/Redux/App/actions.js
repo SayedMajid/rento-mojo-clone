@@ -9,7 +9,6 @@ export const getElectronicsData = () => (dispatch) => {
     );
 };
 
-
 export const getFitnessData = () => (dispatch) => {
   return axios
     .get("http://localhost:8080/fitness")
@@ -24,14 +23,14 @@ export const getFurnitureData = () => (dispatch) => {
     .then((res) =>
       dispatch({ type: types.GET_FURNITURE_DATA_SUCCESS, payload: res.data })
     );
-
 };
 
 
-export const getAppliances = (params)=>(dispatch) => {
+export const getAppliances = (params) => (dispatch) => {
+
   dispatch({ type: types.GET_APPLIANCES_REQUEST });
   axios
-    .get("http://localhost:8080/appliances",params)
+    .get("http://localhost:8080/appliances", params)
     .then((r) =>
       dispatch({ type: types.GET_APPLIANCES_SUCCESS, payload: r.data })
     )

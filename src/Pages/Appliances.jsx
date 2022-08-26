@@ -17,11 +17,13 @@ import Slider from "../misc/ProductsPageslider";
 import { getAppliances } from "../Redux/App/actions";
 
 const Appliances = () => {
+  
   const [sliderValue, setSliderValue] = useState(0);
   const dispatch = useDispatch();
+  const appliances = useSelector((store) => store.App.appliances);
   const location = useLocation();
-
   const [searchParams, setSearchParams] = useSearchParams();
+
   const urlCategory = searchParams.getAll("category");
   const urlSort = searchParams.get("sortby");
   const urlstock = searchParams.get("stock");
@@ -29,9 +31,9 @@ const Appliances = () => {
   const [category, setCategory] = useState(urlCategory || []);
   const [sortby, setSortby] = useState(urlSort || []);
   const [stock, setStock] = useState(urlstock || []);
-  console.log(sortby);
-  const appliances = useSelector((store) => store.App.appliances);
-
+  console.log(stock);
+ 
+ 
   //get filtered data
 
   useEffect(() => {
@@ -40,7 +42,7 @@ const Appliances = () => {
       const getAppliancesParams = {
         params: {
           category: searchParams.getAll("category"),
-          stock: searchParams.getAll("stock"),
+          stock: searchParams.get("stock"),
           _sort: sortby && "price",
           _order: sortby,
         },
@@ -48,7 +50,7 @@ const Appliances = () => {
 
       dispatch(getAppliances(getAppliancesParams));
     }
-  }, [location.search]);
+  }, [location]);
 
   //handle the changes
 
@@ -95,9 +97,10 @@ const Appliances = () => {
   //getting data and setting search params
 
   useEffect(() => {
-    if (category || sortby) {
+    if (category || sortby || stock) {
       let params = {};
       category && (params.category = category);
+      stock && (params.stock = stock);
       sortby && (params.sortby = sortby);
       setSearchParams(params);
     }
@@ -253,7 +256,7 @@ const Appliances = () => {
               <Text mb="16px" fontSize="14px">
                 AVAILABILITY
               </Text>
-              <Checkbox defaultChecked={stock.includes("Out of stock")}>
+              <Checkbox defaultChecked={stock.includes("outofstock")} onChange={handleStock} value={"outofstock"}>
                 <Text fontSize="14px">Out of Stock</Text>
               </Checkbox>
             </Box>
@@ -301,7 +304,7 @@ const Appliances = () => {
             gap={[4, 6, 10]}
           >
             {appliances?.map((item) => (
-              <ProductsCard key={item.id} {...item} />
+              <ProductsCard key={item.id} {...item}/>
             ))}
           </Box>
         </Box>
