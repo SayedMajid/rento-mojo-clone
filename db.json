@@ -1,4 +1,24 @@
 {
+
+  "cart": [
+    {
+      "title": "Stuart Study Table",
+      "price": "149",
+      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "category": "WFH-Essentials",
+      "deposit": "299",
+      "id": 2
+    },
+    {
+      "title": "Miller Office Chair",
+      "price": "149",
+      "image": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "category": "WFH-Essentials",
+      "deposit": "299",
+      "id": 3
+    }
+  ],
+
   "appliances": [
     {
       "id": 300001,
@@ -11,6 +31,7 @@
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
     },
     {
+
       "id": 300002,
       "image": "https://p.rmjo.in/productSquare/bwskug14-500x500.jpg",
       "title": "Single Door Fridge (190 Litre)",
@@ -19,6 +40,95 @@
       "category": "fridge",
       "days": "4 days",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+
+      "id":3000026,
+     "image": "https://p.rmjo.in/productSquare/rdy4ni3d-500x500.jpg",
+     "title": "Front Load Washing Machine",
+     "price": 1189,
+     "stock": "Out of stock",
+     "category": "washingmachine",
+     "days": "3 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000027,
+     "image": "https://p.rmjo.in/productSquare/ex9dpggj-500x500.jpg",
+     "title": "Cloth Dryer",
+     "price": 929,
+     "stock": "Out of stock",
+     "category": "clothdryer",
+     "days": "2 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000028,
+     "image": "https://p.rmjo.in/productSquare/tapbng5v-500x500.jpg",
+     "title": "Smart LED TV - 49",
+     "price": 1339,
+     "stock": "Out of stock",
+     "category": "telivision",
+     "days": "2 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000029,
+     "image": "https://p.rmjo.in/productSquare/4bc5eken-500x500.jpg",
+     "title": "Smart LED TV- 55",
+     "price": 2349,
+     "stock": "Out of stock",
+     "category": "telivision",
+     "days": "2 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000030,
+     "image": "https://p.rmjo.in/productSquare/h62xocvl-500x500.jpg",
+     "title": "LED TV -  24",
+     "price": 569,
+     "stock": "Out of stock",
+     "category": "telivision",
+     "days": "2 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000031,
+     "image": "https://p.rmjo.in/productSquare/rypid344-500x500.jpg",
+     "title": "Kent Maxx Water Purifier",
+     "price": 409,
+     "stock": "Out of stock",
+     "category": "waterandairpurifiers",
+     "days": "4 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000032,
+     "image": "https://p.rmjo.in/productSquare/twnq03t0-500x500.jpg",
+     "title": "Kent Pride Plus Water Purifier",
+     "price": 779,
+     "stock": "Out of stock",
+     "category": "waterandairpurifiers",
+     "days": "3 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    },
+    {
+      "id":3000033,
+     "image": "https://p.rmjo.in/productSquare/683moqyy-500x500.jpg",
+     "title": "IFB Dishwasher",
+     "price": 1409,
+     "stock": "Out of stock",
+     "category": "dishwasher",
+     "days": "5 days",
+     "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+    }
+   ],
+
+  "wfh_All": [
+    {
+      "id": 1,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
     },
     {
       "id": 300003,
@@ -672,6 +782,7 @@
       "price": "229",
       "o_price": "72"
     }
+
   ],
 
   "electronics": [
@@ -3413,3 +3524,5 @@
     }
   ]
 }
+
+  
