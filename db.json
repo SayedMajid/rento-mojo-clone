@@ -1,5 +1,6 @@
 {
 
+
   "appliances": [
     {
       "id":300001,
@@ -333,6 +334,7 @@
      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
     }
    ],
+
 
   "wfh_All": [
     {
@@ -3923,3 +3925,4 @@
     }
   ]
 }
+

@@ -5,7 +5,7 @@ import styles from "./RahiHome.module.css";
 export const RahiHome = () => {
   return (
     <>
-      <Container minWidth="95%">
+      <Container minWidth="90%" style={{}}>
         <Box>
           <Text
             fontSize={{

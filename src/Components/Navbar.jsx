@@ -5,6 +5,16 @@ import rmlogosmall from "../Components/Icons/rmlogosmall.png";
 import { BsSearch, BsCart3 } from "react-icons/bs";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from '@chakra-ui/react'
+import Login from "./Login";
 
 
 
@@ -68,7 +78,7 @@ const Navbar = () => {
           <BsCart3  />
           <Text display={{base:"inline-flex",md:"none",lg:"inline-flex"}}>Cart</Text>
         </Stack>
-        <Button cursor={"pointer"} onClick={()=>navigate(`/login`)}>LOGIN/SIGNUP</Button>
+        <Login />
       </Stack>
     </Stack>
   );
