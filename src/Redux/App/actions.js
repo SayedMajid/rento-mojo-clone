@@ -1,9 +1,9 @@
 import * as types from "./actionTypes";
 import axios from "axios";
 
-export const getElectronicsData = () => (dispatch) => {
+export const getElectronicsData = (params) => (dispatch) => {
   return axios
-    .get("http://localhost:8080/electronics")
+    .get("http://localhost:8080/electronics" , { params })
     .then((res) =>
       dispatch({ type: types.GET_ELECTRONICS_DATA_SUCCESS, payload: res.data })
     );
@@ -24,7 +24,7 @@ export const getFurnitureData = () => (dispatch) => {
     .then((res) =>
       dispatch({ type: types.GET_FURNITURE_DATA_SUCCESS, payload: res.data })
     );
-
+}
 
 
 
