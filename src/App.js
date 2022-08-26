@@ -18,10 +18,10 @@ function App() {
     
         {/* <RahiRoutes /> */}
 
-    {/* <Navbar />
+    <Navbar />
       <AllRoutes />
-      <Footer />  */}
-      <Login />
+      <Footer /> 
+      {/* <Login /> */}
     </div>
   );
 }
