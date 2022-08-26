@@ -1,5 +1,22 @@
 {
-
+  "cart": [
+    {
+      "title": "Stuart Study Table",
+      "price": "149",
+      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "category": "WFH-Essentials",
+      "deposit": "299",
+      "id": 2
+    },
+    {
+      "title": "Miller Office Chair",
+      "price": "149",
+      "image": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "category": "WFH-Essentials",
+      "deposit": "299",
+      "id": 3
+    }
+  ],
   "wfh_All": [
     {
       "id": 1,
@@ -142,7 +159,8 @@
       "title": "Marios Office Chair",
       "price": "199",
       "o_price": "72"
-    }, {
+    },
+    {
       "id": 5,
       "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
       "title": "Miller Office Chair",
@@ -2880,6 +2898,3 @@
     }
   ]
 }
-
-  
-

@@ -76,14 +76,14 @@ const Wfh = () => {
    }}>
    <Tabs variant='soft-rounded' colorScheme='green'>
   <TabList>
-    <Tab>All</Tab>
-    <Tab>Furniture</Tab>
-    <Tab>Fitness Equipment</Tab>
+    <Tab fontSize={{sm:"15px",md:"17px",lg:"18px",xl:'20px',base:"14px"}}>All</Tab>
+    <Tab fontSize={{sm:"15px",md:"17px",lg:"18px",xl:'20px',base:"14px"}}>Furniture</Tab>
+    <Tab fontSize={{sm:"15px",md:"17px",lg:"18px",xl:'20px',base:"14px"}}>Fitness Equipment</Tab>
   </TabList>
   <TabPanels>
     <TabPanel>
-      <Box style={{
-       
+      <Box width={{sm: "100%",md:"100%",lg:"80%",xl:"80%",base:"100%"}} style={{
+        margin:'auto'
       }}>
         <Box>
        

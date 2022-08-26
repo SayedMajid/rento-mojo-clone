@@ -8,6 +8,7 @@ const WfhDetails = () => {
   const [product,SetProduct] = useState({})
   const [loading,setLoading] = useState(false);
   const [error,setError] = useState(false)
+  const params = useParams()
  
   useEffect(()=> {
     setLoading(true)
@@ -21,10 +22,26 @@ const WfhDetails = () => {
   let year = new Date().getFullYear();
   let month = new Date().getMonth();
   let date = new Date().getDate() ;
-  console.log(date,month,year)
+  //console.log(date,month,year)
 
+  
+  
 
-  const params = useParams()
+  const addToCart = () => {
+    
+    const payload = {
+      title : product.title,
+      price: product.price,
+      image: product.img,
+      category : "WFH-Essentials",
+      deposit : `${Number(product.price)+Number(150)}`,
+    }
+
+    axios.post("http://localhost:8080/cart",payload)
+    .then((res)=> alert("Added"))
+    .catch(()=> alert("Failed"))
+  }
+
   return loading ? (<Img width="15%" style={{marginLeft:"30%"}} src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/cupertino_activity_indicator.gif" />) 
   : error ? (<Img width="30%" style={{marginLeft:"30%",borderRadius:"8px"}} src="https://yacht-express.net/wp-content/uploads/2020/12/it-seems-that-something-went-wrong-1-718x602.gif" />) 
   : (
@@ -152,7 +169,7 @@ const WfhDetails = () => {
         </Box>
             <Box style={{
               width:"60%",margin:"auto",marginTop:"4%"
-            }}><Button onClick={()=>alert("added")} style={{
+            }}><Button onClick={()=> addToCart()} style={{
               backgroundColor:"#dc3226",color:"white"
             }}><Img marginRight="3%" src="https://www.rentomojo.com/public/images/icons/cart-new.svg"/>
             Book Your Plan </Button></Box>
