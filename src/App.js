@@ -1,4 +1,3 @@
-
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import AllRoutes from "./Pages/AllRoutes";
