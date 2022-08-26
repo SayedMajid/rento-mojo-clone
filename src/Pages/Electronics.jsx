@@ -26,7 +26,7 @@ const Electronics = () => {
   const [sortBy, setSortBy] = useState(initSort || "");
   const initCategory = searchParams.getAll("category");
   const [category, setCategory] = useState(initCategory || []);
-  const loadtion = useLocation();
+  const location = useLocation();
 
   // Sorting of price function...
   const handleSortChange = (e) => {
