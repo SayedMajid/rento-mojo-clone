@@ -24,9 +24,11 @@ const Appliances = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlCategory = searchParams.getAll("category");
   const urlSort = searchParams.get("sortby");
+  const urlstock=searchParams.get("stock");
 
   const [category, setCategory] = useState(urlCategory || []);
   const [sortby, setSortby] = useState(urlSort || []);
+  const [stock, setStock] = useState(urlstock || []);
   console.log(sortby);
   const appliances = useSelector((store) => store.App.appliances);
 
@@ -38,6 +40,7 @@ const Appliances = () => {
       const getAppliancesParams = {
         params: {
           category: searchParams.getAll("category"),
+          stock: searchParams.getAll("stock"),
           _sort: sortby && "price",
           _order: sortby,
         },
@@ -46,7 +49,6 @@ const Appliances = () => {
       dispatch(getAppliances(getAppliancesParams));
     }
   }, [location.search]);
-
 
   //handle the changes
 
@@ -58,7 +60,6 @@ const Appliances = () => {
     let newCategory = [...category];
 
     if (category.includes(option)) {
-
       //remove it
 
       newCategory.splice(newCategory.indexOf(option), 1);
@@ -66,9 +67,12 @@ const Appliances = () => {
       newCategory.push(option);
     }
     setCategory(newCategory);
-};
+  };
 
+  //handle stock availability
+  const handleStock=()=>{
 
+  }
 
   //handle sorting
 
@@ -93,7 +97,7 @@ const Appliances = () => {
   return (
     <>
       <Box>
-        {/* Filters and relevance box */}
+        {/* Filters and relevance box */}  ..
         <Box
           w={{ xl: "80%", md: "80%", base: "95%" }}
           m="20px auto"
@@ -239,7 +243,7 @@ const Appliances = () => {
               <Text mb="16px" fontSize="14px">
                 AVAILABILITY
               </Text>
-              <Checkbox>
+              <Checkbox defaultChecked={stock.includes("Out of stock")}>
                 <Text fontSize="14px">Out of Stock</Text>
               </Checkbox>
             </Box>
