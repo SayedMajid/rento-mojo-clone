@@ -5,7 +5,7 @@ const initState = {
   electronics: [],
   fitness: [],
   furniture: [],
-  appliances:[],
+  appliances: [],
   isLoading: false,
   isError: false,
 };
@@ -20,11 +20,36 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
-    case types.GET_FITNESS_DATA_SUCCESS:{
+
+
+    case types.GET_FITNESS_DATA_REQUEST: {
+      return {
+        ...state,
+        isLoading: true,
+        isError: false,
+      };
+    }
+    case types.GET_FITNESS_DATA_SUCCESS: {
       return {
         ...state,
         fitness: payload,
         isLoading: false,
+        isError: false,
+      };
+    }
+    case types.GET_FITNESS_DATA_FAILURE:{
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    }
+
+
+    case types.GET_FURNITURE_DATA_REQUEST: {
+      return {
+        ...state,
+        isLoading: true,
         isError: false,
       };
     }
@@ -36,27 +61,38 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
+    case types.GET_FURNITURE_DATA_FAILURE:{
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    }
 
+    
 
-    case types.GET_APPLIANCES_REQUEST:
+    case types.GET_APPLIANCES_REQUEST:{
       return {
         ...state,
         isLoading: true,
         isError: false,
       };
-    case types.GET_APPLIANCES_SUCCESS:
+    }
+    case types.GET_APPLIANCES_SUCCESS:{
       return {
         ...state,
         appliances: payload,
         isLoading: false,
         isError: false,
       };
-    case types.GET_APPLIANCES_FAILURE:
+    }
+    case types.GET_APPLIANCES_FAILURE:{
       return {
         ...state,
         isLoading: false,
         isError: true,
       };
+    }
 
     default:
       return state;
