@@ -28,7 +28,6 @@ const Electronics = () => {
   return (
     <>
       <Box>
-        {/* Filters and relevance box */}
         <Box
           w={{ xl: "80%", md: "80%", base: "95%" }}
           m="20px auto"
@@ -64,13 +63,11 @@ const Electronics = () => {
           justifyContent="space-between"
           fontFamily="sans-serif"
         >
-          {/* Sidebar Box */}
           <Box
             h="max-content"
             w={{ xl: "262.5px" }}
             display={{ base: "none", md: "none", xl: "inline" }}
           >
-            {/* Choose rental tenure */}
             <Flex
               border="1px solid #e9e9e9"
               w="100%"
@@ -91,7 +88,6 @@ const Electronics = () => {
                 />
               </Box>
             </Flex>
-            {/* Product Type Box */}
             <Box
               border="1px solid #e9e9e9"
               boxSizing="border-box"
@@ -118,7 +114,6 @@ const Electronics = () => {
                 </Checkbox>
               </Stack>
             </Box>
-            {/* Availability */}
             <Box
               border="1px solid #e9e9e9"
               boxSizing="border-box"
@@ -134,7 +129,6 @@ const Electronics = () => {
                 <Text fontSize="14px">Out of Stock</Text>
               </Checkbox>
             </Box>
-            {/* Cyan Box */}
             <Box
               mt="20px"
               boxSizing="border-box"
@@ -164,7 +158,6 @@ const Electronics = () => {
               </Flex>
             </Box>
           </Box>
-          {/* Products Box */}
           <Box
             w={{ xl: "74%", md: "100%", base: "100%" }}
             h="max-content"
