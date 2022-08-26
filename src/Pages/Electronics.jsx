@@ -14,7 +14,8 @@ import { useDispatch, useSelector } from "react-redux";
 import ProductsCard from "../misc/ProductsCard";
 import Slider from "../misc/ProductsPageslider";
 import { getElectronicsData } from "../Redux/App/actions";
-//
+
+// re-added
 
 const Electronics = () => {
   const [sliderValue, setSliderValue] = React.useState(0);
