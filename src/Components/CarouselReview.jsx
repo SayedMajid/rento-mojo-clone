@@ -51,7 +51,7 @@ export default function CarouselReview() {
         "https://www.rentomojo.com/public/images/testimonials/navin-kumar.jpg",
     },
     {
-      name: "Anjalid Sharma",
+      name: "Anjali Sharma",
       text: "I got to know about RentoMojo through a friend and looked up for AC on their website and finally rented one. The delivery guys installed the AC in 2 days. And with a such a low deposit and rent, I didn't have to spend a whole lot for my comfort. Thank you RentoMojo, for being so easy breezy on my pocket.",
       image:
         "https://www.rentomojo.com/public/images/testimonials/anjali-sharma.jpg",
