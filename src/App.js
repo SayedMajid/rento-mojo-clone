@@ -26,11 +26,11 @@ function App() {
     
         {/* <RahiRoutes /> */}
 
-    {/* <Navbar />
+    {/* <Login /> */}
+      
+ <Navbar />
       <AllRoutes />
-      <Footer />  */}
-      <Login />
-
+      <Footer />
 
 function App() {
   return (
