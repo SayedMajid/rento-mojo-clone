@@ -3,6 +3,24 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import AllRoutes from "./Pages/AllRoutes";
 
+import { Container } from '@chakra-ui/react';
+import Login from './Components/Login';
+import Cart from './Components/Cart';
+function App() {
+  return (
+    <div>
+
+     
+    
+        {/* <RahiRoutes /> */}
+        {/* <Cart /> */}
+
+    <Navbar />
+      <AllRoutes />
+      <Footer /> 
+      {/* <Login /> */}
+
+
 
 function App() {
   return (
@@ -10,6 +28,7 @@ function App() {
       <Navbar />
       <AllRoutes />
       <Footer />
+
     </div>
   );
 }

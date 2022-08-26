@@ -75,6 +75,7 @@ import {
       document.getElementById("top").style.backgroundColor="green";
       document.getElementById("top").innerText=`Mr. ${name}`
       onClose()
+      setVerify(!verify)
       setLogout(true)
     }
    }
@@ -126,7 +127,7 @@ import {
                  lg: "16px",
                  xl: "18px",
                  base : "12px"
-              }}>Enter your phone number*</Text>
+              }}>Enter your 10 Digit phone number*</Text>
               <InputGroup>
              <InputLeftAddon children='+91' /> 
               <Input onChange={(e)=> setPhone(e.target.value)} type="number" style={{border: "none",textAlign:"left"}} maxLength="10"  variant='flushed' />
@@ -150,7 +151,8 @@ import {
               </InputGroup>
              </Box></Box>
 
-              <Box style={{backgroundColor:"white",marginTop:"5%",padding:"1%",borderRadius:"5px"}} >{verify ? <Box style={{width:"60%",margin:"auto",marginTop:"5%"}}>
+              <Box style={{backgroundColor:"white",marginTop:"5%",padding:"1%",borderRadius:"5px"}} >
+                {verify ? <Box style={{width:"60%",margin:"auto",marginTop:"5%"}}>
               <Text fontSize={{
                  sm: "13px",
                  md: "14px",

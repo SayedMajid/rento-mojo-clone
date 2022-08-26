@@ -1,4 +1,24 @@
 {
+
+  "cart": [
+    {
+      "title": "Stuart Study Table",
+      "price": "149",
+      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "category": "WFH-Essentials",
+      "deposit": "299",
+      "id": 2
+    },
+    {
+      "title": "Miller Office Chair",
+      "price": "149",
+      "image": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "category": "WFH-Essentials",
+      "deposit": "299",
+      "id": 3
+    }
+  ],
+
   "appliances": [
     {
       "id":300001,
@@ -332,6 +352,7 @@
      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
     }
    ],
+
   "wfh_All": [
     {
       "id": 1,
@@ -3211,6 +3232,10 @@
       "category": "Fitness",
       "sub-category": "Treadmill"
     }
+
+  ]
+}
+
   ],
   "electronics": [
     {
@@ -5549,3 +5574,4 @@
     }
   ]
 }
+
