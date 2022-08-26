@@ -13,13 +13,14 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProductsCard from "../misc/ProductsCard";
 import Slider from "../misc/ProductsPageslider";
-import { getElectronicsData } from "../Redux/App/actions";
+import { getElectronicsData} from "../Redux/App/actions";
 
 const Electronics = () => {
   const [sliderValue, setSliderValue] = React.useState(0);
   const dispatch = useDispatch();
   const electronicsData = useSelector((store) => store.App.electronics);
   
+
 
   useEffect(() => {
     dispatch(getElectronicsData());
