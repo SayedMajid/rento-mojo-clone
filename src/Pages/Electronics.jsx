@@ -9,8 +9,9 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useSearchParams } from "react-router-dom";
 import ProductsCard from "../misc/ProductsCard";
 import Slider from "../misc/ProductsPageslider";
 import { getElectronicsData } from "../Redux/App/actions";
@@ -18,14 +19,52 @@ import { getElectronicsData } from "../Redux/App/actions";
 // re-added
 
 const Electronics = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [sliderValue, setSliderValue] = React.useState(0);
   const dispatch = useDispatch();
   const electronicsData = useSelector((store) => store.App.electronics);
-  
+  const initSort = searchParams.get("sortBy");
+  const [sortBy, setSortBy] = useState(initSort || "");
+  const initCategory = searchParams.getAll("category");
+  const [category, setCategory] = useState(initCategory || []);
+  const location = useLocation();
+
+  // Sorting of price function...
+  const handleSortChange = (e) => {
+    setSortBy(e.target.value);
+  };
+
+  // Sorting of products category wise...
+  const handleCategoryChange = (e) => {
+    let option = e.target.value;
+
+    let newCategory = [...category];
+    category.includes(option)
+      ? newCategory.splice(newCategory.indexOf(option), 1)
+      : newCategory.push(option);
+
+    setCategory(newCategory);
+  };
 
   useEffect(() => {
-    dispatch(getElectronicsData());
-  }, []);
+    if (category || sortBy) {
+      const searchParams = {};
+      sortBy && (searchParams.sortBy = sortBy);
+      category && (searchParams.category = category);
+      setSearchParams(searchParams);
+    }
+  }, [sortBy, category, setSearchParams]);
+
+  useEffect(() => {
+    if (location.search || electronicsData?.length === 0) {
+      const queryParams = {
+        category: category,
+        _sort: sortBy && "price",
+        _order: sortBy,
+      };
+      dispatch(getElectronicsData(queryParams));
+    }
+  }, [location.search]);
 
   return (
     <>
@@ -45,14 +84,19 @@ const Electronics = () => {
             />
             <Text color="#717171">Filters</Text>
           </Flex>
-          <Select w="130px" border="none" color="#1dbdc0">
+          <Select
+            w="130px"
+            border="none"
+            color="#1dbdc0"
+            onChange={(e) => handleSortChange(e)}
+          >
             <option value="" color="gray">
               Relevance
             </option>
-            <option value="" color="gray">
+            <option value="desc" color="gray">
               Rent - High to low
             </option>
-            <option value="" color="gray">
+            <option value="asc" color="gray">
               Rent - Low to High
             </option>
           </Select>
@@ -102,16 +146,32 @@ const Electronics = () => {
                 PRODUCT TYPE
               </Text>
               <Stack spacing={2} direction="column">
-                <Checkbox>
+                <Checkbox
+                  onChange={(e) => handleCategoryChange(e)}
+                  value="smartphones"
+                  defaultChecked={category.includes("smartphones")}
+                >
                   <Text fontSize="14px">SmartPhones</Text>
                 </Checkbox>
-                <Checkbox>
+                <Checkbox
+                  onChange={(e) => handleCategoryChange(e)}
+                  value="laptops"
+                  defaultChecked={category.includes("laptops")}
+                >
                   <Text fontSize="14px">Laptops</Text>
                 </Checkbox>
-                <Checkbox>
+                <Checkbox
+                  onChange={(e) => handleCategoryChange(e)}
+                  value="smartdevices"
+                  defaultChecked={category.includes("smartdevices")}
+                >
                   <Text fontSize="14px">Smart Devices</Text>
                 </Checkbox>
-                <Checkbox>
+                <Checkbox
+                  onChange={(e) => handleCategoryChange(e)}
+                  value="tablets"
+                  defaultChecked={category.includes("tablets")}
+                >
                   <Text fontSize="14px">Tablets</Text>
                 </Checkbox>
               </Stack>
