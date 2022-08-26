@@ -12,4 +12,3 @@ const initState = {
         return state;
     }
   };
-  
