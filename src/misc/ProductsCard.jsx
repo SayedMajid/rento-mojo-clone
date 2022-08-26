@@ -11,6 +11,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title }) => {
       w={{ base: "auto", md: "auto", xl: "auto" }}
       border="1px solid #e9e9e9"
       borderRadius="5px"
+      key={id}
     >
       <Flex
         position="absolute"
