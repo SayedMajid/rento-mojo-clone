@@ -3,6 +3,7 @@ import * as types from "./actionTypes";
 
 const initState = {
   electronics: [],
+  cartData: [],
   fitness: [],
   furniture: [],
   appliances: [],
@@ -11,6 +12,7 @@ const initState = {
 };
 
 export const reducer = (state = initState, { type, payload }) => {
+
   switch (type) {
     case types.GET_ELECTRONICS_DATA_SUCCESS: {
       return {
@@ -35,7 +37,7 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
-    case types.GET_FITNESS_DATA_FAILURE:{
+    case types.GET_FITNESS_DATA_FAILURE: {
       return {
         ...state,
         isLoading: false,
@@ -49,7 +51,7 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
-    case types.GET_FURNITURE_DATA_SUCCESS:{
+    case types.GET_FURNITURE_DATA_SUCCESS: {
       return {
         ...state,
         furniture: payload,
@@ -57,21 +59,21 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
-    case types.GET_FURNITURE_DATA_FAILURE:{
+    case types.GET_FURNITURE_DATA_FAILURE: {
       return {
         ...state,
         isLoading: false,
         isError: true,
       };
     }
-    case types.GET_APPLIANCES_REQUEST:{
+    case types.GET_APPLIANCES_REQUEST: {
       return {
         ...state,
         isLoading: true,
         isError: false,
       };
     }
-    case types.GET_APPLIANCES_SUCCESS:{
+    case types.GET_APPLIANCES_SUCCESS: {
       return {
         ...state,
         appliances: payload,
@@ -79,11 +81,18 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
-    case types.GET_APPLIANCES_FAILURE:{
+    case types.GET_APPLIANCES_FAILURE: {
       return {
         ...state,
         isLoading: false,
         isError: true,
+      };
+    }
+
+    case types.ADD_TO_CART_SUCCESS: {
+      return {
+        ...state,
+        cartData: payload,
       };
     }
 

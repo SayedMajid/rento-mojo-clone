@@ -1,28 +1,12 @@
 {
   "cart": [
     {
-      "title": "OnePlus 7 Pro (Mirror Gray)",
-      "price": "1669",
-      "image": "https://p.rmjo.in/productSquare/mxzy0xf9-500x500.jpg",
-      "category": "smartphones",
-      "deposit": "1819",
-      "id": 5
-    },
-    {
-      "title": "Stuart Study Table",
-      "price": "149",
-      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
-      "category": "WFH-Essentials",
-      "deposit": "299",
-      "id": 6
-    },
-    {
-      "title": "Stuart Study Table",
-      "price": "149",
-      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
-      "category": "WFH-Essentials",
-      "deposit": "299",
-      "id": 7
+      "title": "Motorized Treadmill AF-515",
+      "price": 2359,
+      "image": "https://p.rmjo.in/productSquare/zo83l86x-500x500.jpg",
+      "category": "treadmills",
+      "deposite": "2509",
+      "id": 1
     }
   ],
   "appliances": [
