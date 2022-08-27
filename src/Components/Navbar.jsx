@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Stack, Image, Select, Input, Text, Flex } from "@chakra-ui/react";
+import { Stack, Image, Select, Input, Text, Flex, Box } from "@chakra-ui/react";
+import "./navbar.css";
 import rentomojologo from "../Components/Icons/rentomojologo.png";
 import rmlogosmall from "../Components/Icons/rmlogosmall.png";
 import { BsSearch, BsCart3 } from "react-icons/bs";
@@ -19,6 +20,9 @@ import axios from "axios";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [searchInput, setSearchInput] = useState("");
+  const [ApiData, setApiData] = useState([]);
+  const [filteredResults, setFilteredResults] = useState([]);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -27,7 +31,28 @@ const Navbar = () => {
     }
   }, []);
 
-  console.log(data)
+  console.log(data);
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/product`).then((r) => {
+      setApiData(r.data);
+      // console.log(r.data)
+    });
+  }, [searchInput]);
+
+  const searchItems = (searchValue) => {
+    setSearchInput(searchValue);
+    const filterdata = ApiData.filter((item) => {
+      return Object.values(item)
+        .join("")
+        .toLowerCase()
+        .includes(searchInput.toLowerCase());
+    });
+    setFilteredResults(filterdata);
+  };
+
+  // console.log(searchInput);
+  console.log(filteredResults);
 
   return (
     <Flex
@@ -74,6 +99,7 @@ const Navbar = () => {
         <option value="">Delhi</option>
       </Select>
       <Stack
+        className="searchbar"
         direction={"row"}
         border={"1px solid rgba(0,0,0,0.2)"}
         padding={"0px 15px"}
@@ -85,10 +111,30 @@ const Navbar = () => {
           variant={"unstyled"}
           placeholder="Search for products"
           htmlSize={50}
+          onChange={(e) => searchItems(e.target.value)}
           p="10px"
         />
-        <BsSearch cursor={"pointer"} />
+
+        {/* <BsSearch cursor={"pointer"} /> */}
+        {filteredResults.length > 0 && (
+          <Box className="abc" display={ searchInput.length === 0 ? "none" : "inline" } >
+            {filteredResults.map((item) => {
+              return (
+                <div className="searchmap">
+                  <div style={{ width: "30px", height: "30px" }}>
+                    <img src={item.image} style={{ width: "100%" }}></img>
+                  </div>
+                  {/* <a href={`/${item.category}/${item.title}/${item.id}`}>
+                <p>{item.title}</p>
+              </a> */}
+                  <p>{item.title}</p>
+                </div>
+              );
+            })}
+          </Box>
+        )}
       </Stack>
+
       <Stack
         direction={"row"}
         alignItems="center"

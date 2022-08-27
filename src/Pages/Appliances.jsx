@@ -305,6 +305,7 @@ const Appliances = () => {
           >
             {appliances?.map((item) => (
               <ProductsCard key={item.id} {...item} goTo={"Appliances"} />
+
             ))}
           </Box>
         </Box>

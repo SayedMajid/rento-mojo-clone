@@ -10,7 +10,8 @@ export const getElectronicsData = (params) => (dispatch) => {
 };
 
 export const getFitnessData = (params) => (dispatch) => {
-  return axios
+  dispatch({ type: types.GET_FITNESS_DATA_REQUEST });
+  axios
     .get("http://localhost:8080/fitness", params)
     .then((res) =>
       dispatch({ type: types.GET_FITNESS_DATA_SUCCESS, payload: res.data })
@@ -21,7 +22,8 @@ export const getFitnessData = (params) => (dispatch) => {
 };
 
 export const getFurnitureData = (params) => (dispatch) => {
-  return axios
+  dispatch({ type: types.GET_FURNITURE_DATA_REQUEST });
+  axios
     .get("http://localhost:8080/furniture", params)
     .then((res) =>
       dispatch({ type: types.GET_FURNITURE_DATA_SUCCESS, payload: res.data })
