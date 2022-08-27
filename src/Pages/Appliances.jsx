@@ -304,7 +304,7 @@ const Appliances = () => {
             gap={[4, 6, 10]}
           >
             {appliances?.map((item) => (
-              <ProductsCard key={item.id} {...item}/>
+              <ProductsCard key={item.id} {...item} goTo={"Appliances"} />
             ))}
           </Box>
         </Box>

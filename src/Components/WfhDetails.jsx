@@ -24,8 +24,6 @@ const WfhDetails = () => {
   let date = new Date().getDate() ;
   //console.log(date,month,year)
 
-  
-  
 
   const addToCart = () => {
     

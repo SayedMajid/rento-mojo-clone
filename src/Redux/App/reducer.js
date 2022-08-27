@@ -20,8 +20,6 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: false,
       };
     }
-
-
     case types.GET_FITNESS_DATA_REQUEST: {
       return {
         ...state,
@@ -44,8 +42,6 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: true,
       };
     }
-
-
     case types.GET_FURNITURE_DATA_REQUEST: {
       return {
         ...state,
@@ -68,9 +64,6 @@ export const reducer = (state = initState, { type, payload }) => {
         isError: true,
       };
     }
-
-    
-
     case types.GET_APPLIANCES_REQUEST:{
       return {
         ...state,

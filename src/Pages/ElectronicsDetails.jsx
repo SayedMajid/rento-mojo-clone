@@ -4,42 +4,32 @@ import {
   Flex,
   Image,
   Text,
-  Button,
-  UnorderedList,
-  ListItem,
+  Button
 } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ButtonSection from "./ButtonSection";
-import { addToCart, getAppliances } from "../Redux/App/actions";
+import { addToCart, getElectronicsData } from "../Redux/App/actions";
 import Slider from "../misc/ProductsPageslider";
 
-const ApplianceDetail = () => {
+const ElectronicsDetails = () => {
   const date = new Date().toLocaleDateString();
   const [sliderValue, setSliderValue] = useState(0);
   const dispatch = useDispatch();
   const { id } = useParams();
-  const appliances = useSelector((store) => store.App.appliances);
-  const [currentAppliance, satcurrentAppliannce] = useState({});
-
-  console.log(currentAppliance);
-
-  //persist on reload
+  const electronics = useSelector((store) => store.App.electronics);
+  const [currentAppliance, setcurrentAppliannce] = useState({});
 
   useEffect(() => {
-    dispatch(getAppliances());
+    dispatch(getElectronicsData());
   }, []);
-
-  //find perticular single data using id
 
   useEffect(() => {
     if (id) {
-      const temp = appliances.find((item) => item.id === Number(id));
-      temp && satcurrentAppliannce(temp);
+      const temp = electronics.find((item) => item.id === Number(id));
+      temp && setcurrentAppliannce(temp);
     }
-  }, [appliances, id, location]);
-
-  //handle cart
+  }, [electronics, id, location]);
 
   const handleCart = (e) => {
     const cartparams = {
@@ -47,7 +37,7 @@ const ApplianceDetail = () => {
       price: currentAppliance.price,
       image: currentAppliance.image,
       category: currentAppliance.category,
-      deposite: `${Number(currentAppliance.price) + Number(150)}`,
+      deposit: `${Number(currentAppliance.price) + Number(150)}`,
     };
     dispatch(addToCart(cartparams));
   };
@@ -186,40 +176,6 @@ const ApplianceDetail = () => {
                       With best-in-class features, corral your way to your
                       favorite work.
                     </Text>
-
-                    <Text fontSize="16px" fontWeight="500">
-                      Dimentions
-                    </Text>
-
-                    <UnorderedList>
-                      <ListItem>25"L x 21"B x 49"H</ListItem>
-                    </UnorderedList>
-
-                    <Text fontSize="16px" fontWeight="500">
-                      Safety & Usage
-                    </Text>
-
-                    <UnorderedList>
-                      <ListItem>Check supply at regular interval</ListItem>
-                      <ListItem>
-                        Avoid placing hot items in the machine
-                      </ListItem>
-                      <ListItem>
-                        Use a stabilizer in case of voltage fluctuation
-                      </ListItem>
-                    </UnorderedList>
-
-                    <Text fontSize="16px" fontWeight="500">
-                      Features & Specs
-                    </Text>
-
-                    <UnorderedList>
-                      <ListItem>Capacity/Size : 180-200L</ListItem>
-                      <ListItem>
-                        Whirlpool/Haier/Godrej/Samsung/Voltbek
-                      </ListItem>
-                      <ListItem>Energy rating: 4 Star and above</ListItem>
-                    </UnorderedList>
                   </Flex>
                 </Flex>
               </Box>
@@ -350,4 +306,4 @@ const ApplianceDetail = () => {
   );
 };
 
-export default ApplianceDetail;
+export default ElectronicsDetails;

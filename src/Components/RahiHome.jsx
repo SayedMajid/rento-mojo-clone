@@ -107,7 +107,7 @@ export const RahiHome = () => {
                 }}
                 style={{
                   color: "#717171",
-                  fontFamily: "monospace"
+                  fontFamily: "sans-serif"
                 }}
               >
                 Quality matters to you, and us! That's why we do a strict
@@ -170,7 +170,7 @@ export const RahiHome = () => {
                 }}
                 style={{
                   color: "#717171",
-                  fontFamily: "monospace"
+                  fontFamily: "sans-serif"
                 }}
               >
                 Changing your house or even your city? We'll relocate your
@@ -233,7 +233,7 @@ export const RahiHome = () => {
                 }}
                 style={{
                   color: "#717171",
-                  fontFamily: "monospace"
+                  fontFamily: "sans-serif"
                 }}
               >
                 Keeping your rented products in a spick and span condition is on
@@ -296,7 +296,7 @@ export const RahiHome = () => {
                 }}
                 style={{
                   color: "#717171",
-                  fontFamily: "monospace"
+                  fontFamily: "sans-serif"
                 }}
               >
                 Pay only for the time you use the product and close your
@@ -359,7 +359,7 @@ export const RahiHome = () => {
                 }}
                 style={{
                   color: "#717171",
-                  fontFamily: "monospace"
+                  fontFamily: "sans-serif"
                 }}
               >
                 If you don't like the product on delivery, you can return it
@@ -425,7 +425,7 @@ export const RahiHome = () => {
                 }}
                 style={{
                   color: "#717171",
-                  fontFamily: "monospace"
+                  fontFamily: "sans-serif"
                 }}
               >
                 Bored of the same product? Upgrade to try another, newer design

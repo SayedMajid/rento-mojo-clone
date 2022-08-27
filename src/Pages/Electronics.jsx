@@ -233,7 +233,7 @@ const Electronics = () => {
             gap={[4, 6, 10]}
           >
             {electronicsData?.map((item) => (
-              <ProductsCard key={item.id} {...item} />
+              <ProductsCard key={item.id} {...item} goTo={"Electronics"} />
             ))}
           </Box>
         </Box>
