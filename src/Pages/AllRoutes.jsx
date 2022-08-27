@@ -7,13 +7,14 @@ import Furniture from "./Furniture";
 import Homepage from "./Homepage";
 import Appliances from "./Appliances";
 import ApplianceDetail from "./ApplianceDetail";
-
+import Cart from "../Components/Cart";
 
 const AllRoutes = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/cart" element={<Cart/>}/>
         <Route path="/Electronics" element={<Electronics />} />
         <Route  path="/WfhEssentials" element={<Wfh />} />
         <Route path="/Fitness" element={<Fitness/>}/>

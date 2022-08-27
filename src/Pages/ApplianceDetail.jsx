@@ -51,7 +51,7 @@ const ApplianceDetail = () => {
       price: currentAppliance.price,
       image: currentAppliance.image,
       category: currentAppliance.category,
-      deposite: `${Number(currentAppliance.price)+Number(150)}`
+      deposit: `${Number(currentAppliance.price)+Number(150)}`
 
     }
     dispatch(addToCart(cartparams));
