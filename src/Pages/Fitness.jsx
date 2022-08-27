@@ -9,8 +9,9 @@ import {
     Stack,
     Text,
   } from "@chakra-ui/react";
-  import React, { useEffect } from "react";
+  import React, { useEffect, useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
+  import { useLocation, useSearchParams } from "react-router-dom";
   import ProductsCard from "../misc/ProductsCard";
   import Slider from "../misc/ProductsPageslider";
   import {  getFitnessData } from "../Redux/App/actions";
@@ -18,14 +19,64 @@ import {
   const Fitness = () => {
     const [sliderValue, setSliderValue] = React.useState(0);
     const dispatch = useDispatch();
+    const location = useLocation();
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const urlCategory = searchParams.getAll("category");
+    const urlSort = searchParams.get("sortby");
+    const urlstock=searchParams.get("stock");
+  
+    const [category, setCategory] = useState(urlCategory || []);
+    const [sortby, setSortby] = useState(urlSort || []);
+    const [stock, setStock] = useState(urlstock || []);
+    console.log(sortby)
     const fitnessData = useSelector((store)=> store.App.fitness);
     
     
   
     useEffect(() => {
-      dispatch(getFitnessData());
-    }, []);
+      if(fitnessData.length ===0 || location.search){
+         const sortby = searchParams.get("sortby");
+         const getFitnessParams = {
+          params: {
+            category: searchParams.getAll("category"),
+            stock: searchParams.getAll("stock"),
+            _sort: sortby && "price",
+            _order: sortby,
+          }
+         }
+         dispatch(getFitnessData(getFitnessParams));
+      }
+    }, [location.search]);
+
+    const handleChange = (e) => {
+      const option  = e.target.value;
+
+      let newCategory = [...category];
+      if(category.includes(option)){
+        newCategory.splice(newCategory.indexOf(option),1);
+      }else{
+        newCategory.push(option);
+      }
+      setCategory(newCategory);
+    }
   
+    const handleSort = (e) => {
+      if(e.target.value){
+        setSortby(e.target.value);
+      }
+    };
+
+    useEffect(()=>{
+      if(category || sortby){
+        let params = {};
+        category && (params.category = category);
+        sortby && (params.sortby = sortby);
+        setSearchParams(params);
+      }
+      dispatch(getFitnessData());
+    }, [setSearchParams, sortby, category])
+
     return (
       <>
         <Box>
@@ -45,14 +96,14 @@ import {
               />
               <Text color="#717171">Filters</Text>
             </Flex>
-            <Select w="130px" border="none" color="#1dbdc0">
+            <Select w="130px" border="none" color="#1dbdc0" onChange={handleSort}>
               <option value="" color="gray">
                 Relevance
               </option>
-              <option value="" color="gray">
+              <option value="desc" color="gray">
                 Rent - High to low
               </option>
-              <option value="" color="gray">
+              <option value="asc" color="gray">
                 Rent - Low to High
               </option>
             </Select>
@@ -105,16 +156,32 @@ import {
                   PRODUCT TYPE
                 </Text>
                 <Stack spacing={2} direction="column">
-                  <Checkbox>
+                  <Checkbox
+                     value={"treadmills"}
+                     defaultChecked={category.includes("treadmills")}
+                     onChange={handleChange}
+                  >
                     <Text fontSize="14px">Treadmills</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                     value={"crossTrainer"}
+                     defaultChecked={category.includes("crossTrainer")}
+                     onChange={handleChange}
+                  >
                     <Text fontSize="14px">Cross Trainers</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                      value={"bikes"}
+                      defaultChecked={category.includes("bikes")}
+                      onChange={handleChange}
+                  >
                     <Text fontSize="14px">Exercise Bikes</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                      value={"massager"}
+                      defaultChecked={category.includes("massager")}
+                      onChange={handleChange}
+                  >
                     <Text fontSize="14px">Massagers</Text>
                   </Checkbox>
                 </Stack>
@@ -131,7 +198,7 @@ import {
                 <Text mb="16px" fontSize="14px">
                   AVAILABILITY
                 </Text>
-                <Checkbox>
+                <Checkbox defaultChecked={stock.includes("Out of stock")}>
                   <Text fontSize="14px">Out of Stock</Text>
                 </Checkbox>
               </Box>
