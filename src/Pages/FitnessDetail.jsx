@@ -11,35 +11,35 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import ButtonSection from "./ButtonSection";
-import { addToCart, getAppliances } from "../Redux/App/actions";
+import { addToCart, getFitnessData } from "../Redux/App/actions";
 import Slider from "../misc/ProductsPageslider";
 
-const ApplianceDetail = () => {
+const FitnessDetail = () => {
   const date = new Date().toLocaleDateString();
   const [sliderValue, setSliderValue] = useState(0);
 
   const dispatch = useDispatch();
   const { id } = useParams();
 
-  const appliances = useSelector((store) => store.App.appliances);
-  const [currentAppliance, satcurrentAppliannce] = useState({});
+  const fitness = useSelector((store) => store.App.fitness);
+  const [currentFitness, setCurrentFitness] = useState({});
 
-  console.log(currentAppliance);
+  // console.log(currentFitness);
 
   //persist on reload
 
   useEffect(() => {
-    dispatch(getAppliances());
+    dispatch(getFitnessData());
   }, []);
 
   //find perticular single data using id
 
   useEffect(() => {
     if (id) {
-      const temp = appliances.find((item) => item.id === Number(id));
-      temp && satcurrentAppliannce(temp);
+      const temp = fitness.find((item) => item.id === Number(id));
+      temp && setCurrentFitness(temp);
     }
-  }, [appliances, id, location]);
+  }, [fitness, id, location]);
 
 
   //handle cart
@@ -47,11 +47,11 @@ const ApplianceDetail = () => {
   const handleCart=(e)=>{
     
    const cartparams={
-      title: currentAppliance.title,
-      price: currentAppliance.price,
-      image: currentAppliance.image,
-      category: currentAppliance.category,
-      deposite: `${Number(currentAppliance.price)+Number(150)}`
+      title: currentFitness.title,
+      price: currentFitness.price,
+      image: currentFitness.image,
+      category: currentFitness.category,
+      deposite: `${Number(currentFitness.price)+Number(150)}`
 
     }
     dispatch(addToCart(cartparams));
@@ -61,7 +61,7 @@ const ApplianceDetail = () => {
     <div>
       {" "}
       <Box className="App" position="relative">
-        <ButtonSection price={currentAppliance.price} />
+        <ButtonSection price={currentFitness.price} />
         <Box
           w={{ xl: "100%", md: "88%", base: "90%" }}
           h="auto"
@@ -84,7 +84,7 @@ const ApplianceDetail = () => {
                   fit={"fill"}
                   height={{ base: "400px", md: "500px", xl: "600px" }}
                   width="100%"
-                  src={currentAppliance.image}
+                  src={currentFitness.image}
                 />
               </Box>
               <Box
@@ -106,7 +106,7 @@ const ApplianceDetail = () => {
                     flexDirection="column"
                   >
                     <Text mb="10px" fontSize={"18px"}>
-                      {currentAppliance.title}
+                      {currentFitness.title}
                     </Text>
                   </Flex>
                   <Text mb="10px" fontSize={"14px"}>
@@ -134,12 +134,12 @@ const ApplianceDetail = () => {
                   fontWeight={"bold"}
                 >
                   <Flex display={{ base: "block", md: "block", xl: "none" }}>
-                    <Text>&#8377;{currentAppliance.price}/mo</Text>
+                    <Text>&#8377;{currentFitness.price}/mo</Text>
                     <Text fontSize="10px">Monthly Rent </Text>
                   </Flex>
                   <Flex display={{ base: "block", md: "block", xl: "none" }}>
                     <Text>
-                      &#8377; {Number(currentAppliance.price) + 150}/mo
+                      &#8377; {Number(currentFitness.price) + 150}/mo
                     </Text>
                     <Text fontSize="10px">Refundable Deposit </Text>
                   </Flex>
@@ -167,17 +167,17 @@ const ApplianceDetail = () => {
                 </Flex>
                 <Flex>
                   <Flex width={{ base: "100%", md: "100%", xl: "60%" }}>
-                    <Image src={currentAppliance.image}  display={{base:"none",md:"none",xl:"inline"}}/>
+                    <Image src={currentFitness.image}  display={{base:"none",md:"none",xl:"inline"}}/>
                   </Flex>
                   <Flex direction="column" p="25px" width={{base:"90%",md:"auto",xl:"auto"}}>
                     <Text mb="10px" fontSize={"18px"} fontWeight="500">
                       {" "}
-                      {currentAppliance.title}
+                      {currentFitness.title}
                     </Text>
                     <Text mb="20px" >
                       There’s always room for more applices with a{" "}
-                      {currentAppliance.title}. Designed for the modern home and
-                      smart brains, this {currentAppliance.category}{" "}
+                      {currentFitness.title}. Designed for the modern home and
+                      smart brains, this {currentFitness.category}{" "}
                       effortlessly reduces the cost of electricity. It reduces
                       your efforts and makes your life easy and entertaining.
                       With best-in-class features, corral your way to your
@@ -249,7 +249,7 @@ const ApplianceDetail = () => {
                   <Text mb="10px" fontSize={"18px"}>
                     {/* current product title */}
 
-                    {currentAppliance.title}
+                    {currentFitness.title}
                   </Text>
                 </Flex>
                 <Text mb="10px" fontSize={"14px"}>
@@ -271,14 +271,14 @@ const ApplianceDetail = () => {
                     <Flex direction={"column"}>
                       <Text fontSize={"20px"} fontWeight={"500"}>
                         {/* price of the current product */}
-                        &#8377;{currentAppliance.price}/mo
+                        &#8377;{currentFitness.price}/mo
                       </Text>
                       <Text fontSize="10px">Monthly Rent </Text>
                     </Flex>
                     <Flex direction="column">
                       <Text fontSize="20px" fontWeight="500">
                         {/* current product price + 150 */}
-                        &#8377; {Number(currentAppliance.price) + 150}/mo
+                        &#8377; {Number(currentFitness.price) + 150}/mo
                       </Text>
                       <Text fontSize="10px">Refundable Deposit </Text>
                     </Flex>
@@ -342,4 +342,4 @@ const ApplianceDetail = () => {
   );
 };
 
-export default ApplianceDetail;
+export default FitnessDetail;

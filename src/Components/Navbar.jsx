@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
-import { Stack, Image, Select, Input, Text, Flex } from "@chakra-ui/react";
-
+import { Stack, Image, Select, Input, Text, Flex, Box } from "@chakra-ui/react";
+import "./navbar.css"
 import rentomojologo from "../Components/Icons/rentomojologo.png";
 import rmlogosmall from "../Components/Icons/rmlogosmall.png";
 import { BsSearch, BsCart3 } from "react-icons/bs";
@@ -43,7 +43,7 @@ const Navbar = () => {
     setFilteredResults(filterdata)
   }
 
-  console.log(searchInput);
+  // console.log(searchInput);
   console.log(filteredResults)
 
 
@@ -77,6 +77,7 @@ const Navbar = () => {
           <option value="">Delhi</option>
         </Select>
         <Stack
+          className="searchbar"
           direction={"row"}
           border={"1px solid rgba(0,0,0,0.2)"}
           padding={"0px 15px"}
@@ -91,8 +92,25 @@ const Navbar = () => {
             onChange={(e)=>searchItems(e.target.value)}
             p="10px"
           />
-          <BsSearch cursor={"pointer"}/>
           
+          <BsSearch cursor={"pointer"}/>
+          { filteredResults.length >0 && (
+          <Box className='abc' >
+            {filteredResults.map((item)=>{
+            return ( <div  className="searchmap">
+              
+              <div style={{width:"30px", height:"30px"}}>
+                <img src={item.image} style={{width:"100%"}}></img>
+              </div>
+              {/* <a href={`/${item.category}/${item.title}/${item.id}`}>
+                <p>{item.title}</p>
+              </a> */}
+              <p>{item.title}</p>
+             
+            </div>)
+        })}
+          </Box>
+        )}
         </Stack>
         
         <Stack direction={"row"} alignItems="center" marginRight={20} cursor={"pointer"} onClick={()=>navigate(`/cart`)}>
