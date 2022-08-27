@@ -17,21 +17,23 @@ import Slider from "../misc/ProductsPageslider";
 import { getAppliances } from "../Redux/App/actions";
 
 const Appliances = () => {
+  
   const [sliderValue, setSliderValue] = useState(0);
   const dispatch = useDispatch();
+  const appliances = useSelector((store) => store.App.appliances);
   const location = useLocation();
-
   const [searchParams, setSearchParams] = useSearchParams();
+
   const urlCategory = searchParams.getAll("category");
   const urlSort = searchParams.get("sortby");
-  const urlstock=searchParams.get("stock");
+  const urlstock = searchParams.get("stock");
 
   const [category, setCategory] = useState(urlCategory || []);
   const [sortby, setSortby] = useState(urlSort || []);
   const [stock, setStock] = useState(urlstock || []);
-  console.log(sortby);
-  const appliances = useSelector((store) => store.App.appliances);
-
+  console.log(stock);
+ 
+ 
   //get filtered data
 
   useEffect(() => {
@@ -40,7 +42,7 @@ const Appliances = () => {
       const getAppliancesParams = {
         params: {
           category: searchParams.getAll("category"),
-          stock: searchParams.getAll("stock"),
+          stock: searchParams.get("stock"),
           _sort: sortby && "price",
           _order: sortby,
         },
@@ -48,7 +50,7 @@ const Appliances = () => {
 
       dispatch(getAppliances(getAppliancesParams));
     }
-  }, [location.search]);
+  }, [location]);
 
   //handle the changes
 
@@ -70,9 +72,19 @@ const Appliances = () => {
   };
 
   //handle stock availability
-  const handleStock=()=>{
+  const handleStock = (e) => {
+    const option = e.target.value;
 
-  }
+    let newStock = [...stock];
+
+    if (stock.includes(option)) {
+      newStock.splice(newStock.indexOf(option), 1);
+    }
+    else{
+      newStock.push(option);
+    }
+    setStock(newStock);
+  };
 
   //handle sorting
 
@@ -85,19 +97,20 @@ const Appliances = () => {
   //getting data and setting search params
 
   useEffect(() => {
-    if (category || sortby) {
+    if (category || sortby || stock) {
       let params = {};
       category && (params.category = category);
+      stock && (params.stock = stock);
       sortby && (params.sortby = sortby);
       setSearchParams(params);
     }
     dispatch(getAppliances());
-  }, [setSearchParams, sortby, category]);
+  }, [setSearchParams, sortby, category,stock]);
 
   return (
     <>
       <Box>
-        {/* Filters and relevance box */}  ..
+        {/* Filters and relevance box */} ..
         <Box
           w={{ xl: "80%", md: "80%", base: "95%" }}
           m="20px auto"
@@ -243,7 +256,7 @@ const Appliances = () => {
               <Text mb="16px" fontSize="14px">
                 AVAILABILITY
               </Text>
-              <Checkbox defaultChecked={stock.includes("Out of stock")}>
+              <Checkbox defaultChecked={stock.includes("outofstock")} onChange={handleStock} value={"outofstock"}>
                 <Text fontSize="14px">Out of Stock</Text>
               </Checkbox>
             </Box>
@@ -291,7 +304,7 @@ const Appliances = () => {
             gap={[4, 6, 10]}
           >
             {appliances?.map((item) => (
-              <ProductsCard key={item.id} {...item} />
+              <ProductsCard key={item.id} {...item}/>
             ))}
           </Box>
         </Box>
