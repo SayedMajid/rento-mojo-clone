@@ -6,6 +6,8 @@ import Fitness from "./Fitness";
 import Furniture from "./Furniture";
 import Homepage from "./Homepage";
 import Appliances from "./Appliances";
+import WfhDetails from "../Components/WfhDetails";
+import Cart from "../Components/Cart";
 
 
 const AllRoutes = () => {
@@ -15,6 +17,8 @@ const AllRoutes = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/Electronics" element={<Electronics />} />
         <Route  path="/WfhEssentials" element={<Wfh />} />
+        <Route path="/wfh/:id" element={<WfhDetails />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/Fitness" element={<Fitness/>}/>
         <Route path="/Furniture" element={<Furniture />}/>
         <Route path="/Appliances" element={<Appliances/>}/>
