@@ -1,10 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import { SimpleGrid,Box,Text,Img,Container, Select, Button } from '@chakra-ui/react'
+import { useToast } from '@chakra-ui/react'
 
 const Cart = () => {
      const [cartData,setCartData] = useState([]) 
      const [quantity,setQuantity] = useState(1)
+     const toast = useToast()
 
      const getCart = () => {
         axios.get("http://localhost:8080/cart")
@@ -24,7 +26,14 @@ const Cart = () => {
     axios.delete(`http://localhost:8080/cart/${id}`)
     .then((res)=> {
           getCart()
-        alert("Item Deleted")
+          toast({
+            title: 'Item Deleted.',
+            description: "1 Item has been Removed From Your Cart",
+            position: "top",
+            status: 'success',
+            duration: 4000,
+            isClosable: true,
+          })
     })
     .catch(()=> null)
    }
@@ -38,9 +47,17 @@ const Cart = () => {
 //    //console.log(total)
 
 const handleBuy = () => {
-    alert("Product Bought!! Continue Shopping")
+   
     document.getElementById("buy").style.backgroundColor="green"
     document.getElementById("buy").innerText="Bought"
+    toast({
+        title: 'Item Placed.',
+        description: "Thanks For Shopping With Us.",
+        position: "top",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
 
 }
 
@@ -67,7 +84,7 @@ const handleBuy = () => {
   
   
   (
-<Box style={{border:"1px solid", width:"100%",backgroundColor:"#f5f7fa",padding:"5%"}}>
+<Box style={{ width:"100%",backgroundColor:"#f5f7fa",padding:"5%"}}>
 <SimpleGrid style={{width:"90%",margin:"auto",marginTop:"4%",gap:'2%'}} columns={{
     sm:1,
     md:2,
