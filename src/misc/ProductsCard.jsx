@@ -66,8 +66,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title ,stock}) => {
       >
         <Text>&#8377;{price}/mo</Text>
         <Text display="flex" justifyContent="center" alignItems="center">
-          {" "}
-          <Image src={delivery} mr="4px" /> {days}
+          <Image src={delivery} mr="4px" /> {days ? days : "Fast Delivery Assured"}
         </Text>
       </Flex>
       

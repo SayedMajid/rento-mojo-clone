@@ -1,27 +1,33 @@
 import * as types from "./actionTypes";
 import axios from "axios";
 
-export const getElectronicsData = () => (dispatch) => {
+export const getElectronicsData = (params) => (dispatch) => {
   return axios
-    .get("http://localhost:8080/electronics")
+    .get("http://localhost:8080/electronics", { params })
     .then((res) =>
       dispatch({ type: types.GET_ELECTRONICS_DATA_SUCCESS, payload: res.data })
     );
 };
 
-export const getFitnessData = () => (dispatch) => {
+export const getFitnessData = (params) => (dispatch) => {
   return axios
-    .get("http://localhost:8080/fitness")
+    .get("http://localhost:8080/fitness", params)
     .then((res) =>
       dispatch({ type: types.GET_FITNESS_DATA_SUCCESS, payload: res.data })
+    )
+    .catch((e) =>
+      dispatch({ type: types.GET_FITNESS_DATA_FAILURE, payload: e })
     );
 };
 
-export const getFurnitureData = () => (dispatch) => {
+export const getFurnitureData = (params) => (dispatch) => {
   return axios
-    .get("http://localhost:8080/furniture")
+    .get("http://localhost:8080/furniture", params)
     .then((res) =>
       dispatch({ type: types.GET_FURNITURE_DATA_SUCCESS, payload: res.data })
+    )
+    .catch((e) =>
+      dispatch({ type: types.GET_FURNITURE_DATA_FAILURE, payload: e })
     );
 };
 
