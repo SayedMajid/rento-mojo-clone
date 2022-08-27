@@ -1,5 +1,7 @@
+
 import React, { useEffect, useState } from "react";
-import { Stack, Image, Select, Input, Text } from "@chakra-ui/react";
+import { Stack, Image, Select, Input, Text, Flex } from "@chakra-ui/react";
+
 import rentomojologo from "../Components/Icons/rentomojologo.png";
 import rmlogosmall from "../Components/Icons/rmlogosmall.png";
 import { BsSearch, BsCart3 } from "react-icons/bs";
@@ -47,25 +49,14 @@ const Navbar = () => {
 
 
   return (
-    <Stack
-      alignItems={"center"}
-      padding="10px"
-      justifyContent={{lg:"space-between",md:"space-between",base:"space-between"}}
-      position={"sticky"}
-      width={"100%"}
-      zIndex={"999"}
-      top="0"
-      background={"white"}
-      boxShadow={"2px 2px 5px rgba(0,0,0,0.2)"}
-
-    >
-      <Stack direction={"row"} gap={{base:"8",md:"3",lg:"2"}} >
+   
+      <Flex  justifyContent="space-between" alignItems="center"p="10px" width="100%" gap="10px" background="white" zIndex="9999" pl={{base:"5%",md:"",xl:"10%"}} pr={{base:"5%",md:"",xl:"10%"}} position="sticky" top="0" left="0" boxShadow=" 2px 2px 8px rgba(0,0,0,0.2)">
         <Image
           src={rentomojologo}
           alt="errorloading logo"
           width={"190px"}
           height={"33px"}
-          display={{base:"none",md:"none",lg:"inline-flex"}}
+          display={{base:"none",md:"none",xl:"inline-flex"}}
           onClick={()=>navigate(`/`)}
           cursor={"pointer"}
         />
@@ -74,7 +65,7 @@ const Navbar = () => {
           alt="errorloading logo"
           width={"auto"}
           height={"33px"}
-          display={{base:"inline-flex",md:"inline-flex",lg:"none"}}
+          display={{base:"inline-flex",md:"inline-flex",xl:"none"}}
           onClick={()=>navigate(`/`)}
           cursor={"pointer"}
         />
@@ -98,6 +89,7 @@ const Navbar = () => {
             placeholder="Search for products"
             htmlSize={50}
             onChange={(e)=>searchItems(e.target.value)}
+            p="10px"
           />
           <BsSearch cursor={"pointer"}/>
           
@@ -108,8 +100,8 @@ const Navbar = () => {
           <Text display={{base:"inline-flex",md:"none",lg:"inline-flex"}}>Cart</Text>
         </Stack>
         <Login />
-      </Stack>
-    </Stack>
+      </Flex>
+    
   );
 };
 
