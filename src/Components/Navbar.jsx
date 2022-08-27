@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Stack, Image, Select, Input, Text } from "@chakra-ui/react";
 import rentomojologo from "../Components/Icons/rentomojologo.png";
 import rmlogosmall from "../Components/Icons/rmlogosmall.png";
@@ -15,11 +15,37 @@ import {
   ModalCloseButton,
 } from '@chakra-ui/react'
 import Login from "./Login";
+import axios from "axios";
 
 
 
 const Navbar = () => {
   const navigate=useNavigate();
+  const [searchInput, setSearchInput] = useState("");
+  const [ApiData,setApiData] = useState([]);
+  const [filteredResults, setFilteredResults] = useState([]);
+
+  useEffect(()=>{
+    axios.get(`http://localhost:8080/product`)
+          .then((r)=>{
+            setApiData(r.data);
+            // console.log(r.data)
+          })
+  },[])
+
+  const searchItems = (searchValue) => {
+    setSearchInput(searchValue)
+    const filterdata = ApiData.filter((item)=>{
+      return Object.values(item).join("").toLowerCase().includes(searchInput.toLowerCase())
+    })
+    setFilteredResults(filterdata)
+  }
+
+  console.log(searchInput);
+  console.log(filteredResults)
+
+
+
   return (
     <Stack
       alignItems={"center"}
@@ -71,9 +97,12 @@ const Navbar = () => {
             variant={"unstyled"}
             placeholder="Search for products"
             htmlSize={50}
+            onChange={(e)=>searchItems(e.target.value)}
           />
           <BsSearch cursor={"pointer"}/>
+          
         </Stack>
+        
         <Stack direction={"row"} alignItems="center" marginRight={20} cursor={"pointer"} onClick={()=>navigate(`/cart`)}>
           <BsCart3  />
           <Text display={{base:"inline-flex",md:"none",lg:"inline-flex"}}>Cart</Text>
