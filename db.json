@@ -9,12 +9,12 @@
       "id": 2
     },
     {
-      "title": "Miller Office Chair",
-      "price": "149",
-      "image": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
-      "category": "WFH-Essentials",
-      "deposit": "299",
-      "id": 3
+      "title": "Air Cooler 70  L",
+      "price": 569,
+      "image": "https://p.rmjo.in/productSquare/emb9c0lx-500x500.jpg",
+      "category": "aircoolers",
+      "deposit": "719",
+      "id": 4
     }
   ],
   "appliances": [
@@ -3429,7 +3429,7 @@
       "id": 190
     }
   ],
-  "product":[
+  "product": [
     {
       "id": 300001,
       "image": "https://p.rmjo.in/productSquare/xev0b5yi-500x500.jpg",
