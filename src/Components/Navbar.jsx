@@ -148,7 +148,6 @@ const Navbar = () => {
         marginRight={{ xl: 16, md: 16, base: 2 }}
         cursor={"pointer"}
         onClick={() => navigate(`/cart`)}
-        border="1px solid red"
         h="50px"
         w={{ xl: "80px", md: "40px", base: "80px" }}
         position="relative"
@@ -161,11 +160,11 @@ const Navbar = () => {
           backgroundColor="#1dbdc0"
           h={{ xl: "20px", md: "16px", base: "14px" }}
           w={{ xl: "20px", md: "16px", base: "14px" }}
-          alignItems="center"
           justifyContent="center"
-          // display={cartData.length === 0 ? "none" : "inline"}
+          alignItems="center"
+          display={Cart.length === 0 ? "none" : "inline"}
         >
-          <Text fontSize="10px" color="white" textAlign="center">
+          <Text fontSize="10px" color="white" textAlign="center" mt={{xl:"2px"}}>
             {Cart.length}
           </Text>
         </Flex>

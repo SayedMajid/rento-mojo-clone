@@ -1,5 +1,22 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "title": "Smart LED TV - 49",
+      "price": 1339,
+      "image": "https://p.rmjo.in/productSquare/tapbng5v-500x500.jpg",
+      "category": "telivision",
+      "deposite": "1489",
+      "id": 1
+    },
+    {
+      "title": "Smart LED TV - 49",
+      "price": 1339,
+      "image": "https://p.rmjo.in/productSquare/tapbng5v-500x500.jpg",
+      "category": "telivision",
+      "deposite": "1489",
+      "id": 2
+    }
+  ],
   "appliances": [
     {
       "id": 300001,
