@@ -9,8 +9,9 @@ import {
     Stack,
     Text,
   } from "@chakra-ui/react";
-  import React, { useEffect } from "react";
+  import React, { useEffect, useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useSearchParams } from "react-router-dom";
   import ProductsCard from "../misc/ProductsCard";
   import Slider from "../misc/ProductsPageslider";
   import { getFurnitureData } from "../Redux/App/actions";
@@ -18,13 +19,60 @@ import {
   const Furniture = () => {
     const [sliderValue, setSliderValue] = React.useState(0);
     const dispatch = useDispatch();
+
+    const location = useLocation();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const urlCategory = searchParams.getAll("category");
+    const urlSort = searchParams.get("sortby");
+    const urlstock=searchParams.get("stock");
+  
+    const [category, setCategory] = useState(urlCategory || []);
+    const [sortby, setSortby] = useState(urlSort || []);
+    const [stock, setStock] = useState(urlstock || []);
     const furnitureData = useSelector((store)=> store.App.furniture);
     
-    
+    useEffect(() => {
+      if (furnitureData.length === 0 || location.search) {
+        const sortby = searchParams.get("sortby");
+        const getFurnitureParams = {
+          params: {
+            category: searchParams.getAll("category"),
+            stock: searchParams.getAll("stock"),
+            _sort: sortby && "price",
+            _order: sortby,
+          },
+        };
+  
+        dispatch(getFurnitureData(getFurnitureParams));
+      }
+    }, [location.search]);
+
+    const handleChange = (e) => {
+      const option = e.target.value;
+      let newCategory = [...category];
+      if (category.includes(option)) {
+        newCategory.splice(newCategory.indexOf(option), 1);
+      } else {
+        newCategory.push(option);
+      }
+      setCategory(newCategory);
+    };
+
+    const handleSort = (e) => {
+      if (e.target.value) {
+        setSortby(e.target.value);
+      }
+    };
   
     useEffect(() => {
+      if (category || sortby) {
+        let params = {};
+        category && (params.category = category);
+        sortby && (params.sortby = sortby);
+        setSearchParams(params);
+      }
       dispatch(getFurnitureData());
-    }, []);
+    }, [setSearchParams, sortby, category]);
   
     console.log(furnitureData);
     return (
@@ -46,14 +94,14 @@ import {
               />
               <Text color="#717171">Filters</Text>
             </Flex>
-            <Select w="130px" border="none" color="#1dbdc0">
+            <Select w="130px" border="none" color="#1dbdc0" onChange={handleSort}>
               <option value="" color="gray">
                 Relevance
               </option>
-              <option value="" color="gray">
+              <option value="desc" color="gray">
                 Rent - High to low
               </option>
-              <option value="" color="gray">
+              <option value="asc" color="gray">
                 Rent - Low to High
               </option>
             </Select>
@@ -106,19 +154,39 @@ import {
                   PRODUCT TYPE
                 </Text>
                 <Stack spacing={2} direction="column">
-                  <Checkbox>
+                  <Checkbox
+                     value={"bedroom"}
+                     defaultChecked={category.includes("bedroom")}
+                     onChange={handleChange}
+                  >
                     <Text fontSize="14px">Bedroom</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                     value={"living"}
+                     defaultChecked={category.includes("living")}
+                     onChange={handleChange}
+                  >   
                     <Text fontSize="14px">Living Room</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                      value={"baby"}
+                      defaultChecked={category.includes("baby")}
+                      onChange={handleChange}
+                  >
                     <Text fontSize="14px">Baby Furniture</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                       value={"dining"}
+                       defaultChecked={category.includes("dining")}
+                       onChange={handleChange}
+                  >
                     <Text fontSize="14px">Kitchen & Dining</Text>
                   </Checkbox>
-                  <Checkbox>
+                  <Checkbox
+                      value={"wfh"}
+                      defaultChecked={category.includes("wfh")}
+                      onChange={handleChange}
+                  >
                     <Text fontSize="14px">Work From Home (WFH)</Text>
                   </Checkbox>
                 </Stack>
@@ -135,7 +203,7 @@ import {
                 <Text mb="16px" fontSize="14px">
                   AVAILABILITY
                 </Text>
-                <Checkbox>
+                <Checkbox defaultChecked={stock.includes("Out of stock")}>
                   <Text fontSize="14px">Out of Stock</Text>
                 </Checkbox>
               </Box>

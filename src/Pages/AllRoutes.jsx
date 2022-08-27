@@ -6,8 +6,12 @@ import Fitness from "./Fitness";
 import Furniture from "./Furniture";
 import Homepage from "./Homepage";
 import Appliances from "./Appliances";
+
 import WfhDetails from "../Components/WfhDetails";
 import Cart from "../Components/Cart";
+
+import ApplianceDetail from "./ApplianceDetail";
+
 
 
 const AllRoutes = () => {
@@ -20,8 +24,10 @@ const AllRoutes = () => {
         <Route path="/wfh/:id" element={<WfhDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/Fitness" element={<Fitness/>}/>
+        <Route path="/Packages" element={<Appliances/>}/>
         <Route path="/Furniture" element={<Furniture />}/>
         <Route path="/Appliances" element={<Appliances/>}/>
+        <Route path="/Appliances/:id" element={<ApplianceDetail/>} />
       </Routes>
     </>
   );
