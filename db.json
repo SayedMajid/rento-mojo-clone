@@ -1,22 +1,5 @@
 {
-  "cart": [
-    {
-      "title": "Stuart Study Table",
-      "price": "149",
-      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
-      "category": "WFH-Essentials",
-      "deposit": "299",
-      "id": 2
-    },
-    {
-      "title": "Miller Office Chair",
-      "price": "149",
-      "image": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
-      "category": "WFH-Essentials",
-      "deposit": "299",
-      "id": 3
-    }
-  ],
+  "cart": [],
   "appliances": [
     {
       "id": 300001,
