@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { Box, Divider, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Image, Tag, TagLabel, Text } from "@chakra-ui/react";
+import { Navigate, useNavigate } from "react-router-dom";
 
-const ProductsCard = ({ days, delivery, id, image, price, title }) => {
+const ProductsCard = ({ days, delivery, id, image, price, title ,stock}) => {
   const [heart, setHeart] = useState(false);
+
+  const navigate=useNavigate();
 
   return (
     <Box
@@ -12,6 +15,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title }) => {
       border="1px solid #e9e9e9"
       borderRadius="5px"
       key={id}
+      onClick={(e)=>navigate(`/Appliances/${id}`)}
     >
       <Flex
         position="absolute"
@@ -35,6 +39,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title }) => {
           onClick={() => setHeart(!heart)}
         />
       </Flex>
+     
       <Image
         w="100%"
         borderTopLeftRadius="5px"
@@ -42,6 +47,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title }) => {
         h={{ xl: "260px", md: "231px", base: "177px" }}
         src={image}
       />
+      
       <Box
         w={{ base: "179px", md: "234px", xl: "262.5px" }}
         whiteSpace="nowrap"
@@ -63,6 +69,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title }) => {
           <Image src={delivery} mr="4px" /> {days ? days : "Fast Delivery Assured"}
         </Text>
       </Flex>
+      
     </Box>
   );
 };
