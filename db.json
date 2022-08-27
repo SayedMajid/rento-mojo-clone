@@ -17,7 +17,6 @@
       "id": 3
     }
   ],
-
   "appliances": [
     {
       "id": 300001,
@@ -360,7 +359,6 @@
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
     }
   ],
-
   "wfh_All": [
     {
       "id": 1,
@@ -894,7 +892,6 @@
       "o_price": "72"
     }
   ],
-
   "electronics": [
     {
       "image2": "https://www.rentomojo.com/bangalore/electronics/rent-oneplus-7/92530",
