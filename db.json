@@ -1,20 +1,28 @@
 {
   "cart": [
     {
+      "title": "OnePlus 7 Pro (Mirror Gray)",
+      "price": "1669",
+      "image": "https://p.rmjo.in/productSquare/mxzy0xf9-500x500.jpg",
+      "category": "smartphones",
+      "deposit": "1819",
+      "id": 5
+    },
+    {
       "title": "Stuart Study Table",
       "price": "149",
       "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
       "category": "WFH-Essentials",
       "deposit": "299",
-      "id": 2
+      "id": 6
     },
     {
-      "title": "Miller Office Chair",
+      "title": "Stuart Study Table",
       "price": "149",
-      "image": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "image": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
       "category": "WFH-Essentials",
       "deposit": "299",
-      "id": 3
+      "id": 7
     }
   ],
   "appliances": [
@@ -121,314 +129,130 @@
   ],
   "wfh_All": [
     {
-      "id": 300003,
-      "image": "https://p.rmjo.in/productSquare/ue88wnov-500x500.jpg",
-      "title": "Single Door Fridge (170 Litre)",
-      "price": 659,
-      "stock": "available",
-      "category": "fridge",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 1,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
     },
     {
-      "id": 300004,
-      "image": "https://p.rmjo.in/productSquare/caskfrhd-500x500.jpg",
-      "title": "Double Door Fridge (240 Litre)",
-      "price": 1049,
-      "stock": "available",
-      "category": "fridge",
-      "days": "5 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 2,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
     },
     {
-      "id": 300005,
-      "image": "https://p.rmjo.in/productSquare/x0to9y4x-500x500.jpg",
-      "title": "Mini Fridge",
-      "price": 449,
-      "stock": "available",
-      "category": "fridge",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 3,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
     },
     {
-      "id": 300006,
-      "image": "https://p.rmjo.in/productSquare/ry27prsa-500x500.jpg",
-      "title": "Single Door Fridge (210 Litre)",
-      "price": 809,
-      "stock": "available",
-      "category": "fridge",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 4,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
     },
     {
-      "id": 300007,
-      "image": "https://p.rmjo.in/productSquare/l6xann5r-500x500.jpg",
-      "title": "Air Conditioner 1 Ton",
-      "price": 1859,
-      "stock": "available",
-      "category": "airconditioner",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 5,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
     },
     {
-      "id": 300008,
-      "image": "https://p.rmjo.in/productSquare/8m9isa2d-500x500.jpg",
-      "title": "Inverter Air Conditioner 1 Ton",
-      "price": 1939,
-      "stock": "available",
-      "category": "airconditioner",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 6,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
     },
     {
-      "id": 300009,
-      "image": "https://p.rmjo.in/productSquare/05gpq2h8-500x500.jpg",
-      "title": "Air Conditioner 1.5 Ton",
-      "price": 2269,
-      "stock": "available",
-      "category": "airconditioner",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 7,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
     },
     {
-      "id": 3000010,
-      "image": "https://p.rmjo.in/productSquare/p556oepz-500x500.jpg",
-      "title": "Air Purifier",
-      "price": 599,
-      "stock": "available",
-      "category": "airconditioner",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 8,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
     },
     {
-      "id": 3000011,
-      "image": "https://p.rmjo.in/productSquare/m00l8vn2-500x500.jpg",
-      "title": "Top Load Washing Machine",
-      "price": 769,
-      "stock": "available",
-      "category": "washingmachine",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 9,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
     },
     {
-      "id": 3000012,
-      "image": "https://p.rmjo.in/productSquare/z227w1xz-500x500.jpg",
-      "title": "Semi Automatic Washing Machine",
-      "price": 479,
-      "stock": "available",
-      "category": "washingmachine",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 10,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
     },
     {
-      "id": 3000013,
-      "image": "https://p.rmjo.in/productSquare/zufkl87m-500x500.jpg",
-      "title": "Microwave Solo 20L",
-      "price": 299,
-      "stock": "available",
-      "category": "microwaveandinduction",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 11,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
     },
     {
-      "id": 3000014,
-      "image": "https://p.rmjo.in/productSquare/6m5fdv0n-500x500.jpg",
-      "title": "Convection Microwave 20L",
-      "price": 529,
-      "stock": "available",
-      "category": "microwaveandinduction",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 12,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
     },
     {
-      "id": 3000015,
-      "image": "https://p.rmjo.in/productSquare/605n5qi4-500x500.jpg",
-      "title": "Smart LED TV - 32",
-      "price": 849,
-      "stock": "available",
-      "category": "telivision",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 13,
+      "img": "https://p.rmjo.in/productSquare/em6h6xgy-500x500.jpg",
+      "title": "Stuart Study Table",
+      "price": "149",
+      "o_price": "72"
     },
     {
-      "id": 3000016,
-      "image": "https://p.rmjo.in/productSquare/eztgdt5u-500x500.jpg",
-      "title": "LED TV - 32",
-      "price": 839,
-      "stock": "available",
-      "category": "telivision",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 14,
+      "img": "https://p.rmjo.in/productSquare/esf6ag3q-500x500.jpg",
+      "title": "Marios Office Chair",
+      "price": "199",
+      "o_price": "72"
     },
     {
-      "id": 3000017,
-      "image": "https://p.rmjo.in/productSquare/6x7es84d-500x500.jpg",
-      "title": "Smart LED TV - 43",
-      "price": 1269,
-      "stock": "available",
-      "category": "telivision",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 15,
+      "img": "https://p.rmjo.in/productSquare/jsxcydcf-500x500.jpg",
+      "title": "Auto InclinationTr...",
+      "price": "2119",
+      "o_price": "72"
     },
     {
-      "id": 3000018,
-      "image": "https://p.rmjo.in/productSquare/e2nc1yzg-500x500.jpg",
-      "title": "LED TV - 40",
-      "price": 1269,
-      "stock": "available",
-      "category": "telivision",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 16,
+      "img": "https://p.rmjo.in/productSquare/ffg0b4na-500x500.jpg",
+      "title": "Cross Trainer...",
+      "price": "1109",
+      "o_price": "72"
     },
     {
-      "id": 3000019,
-      "image": "https://p.rmjo.in/productSquare/5c0xm2zn-500x500.jpg",
-      "title": "Livpure Bolt - Smart Water Purifier",
-      "price": 445,
-      "stock": "available",
-      "category": "waterandairpurifiers",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 17,
+      "img": "https://p.rmjo.in/productSquare/mnuazvk3-500x500.jpg",
+      "title": "Miller Office Chair",
+      "price": "149",
+      "o_price": "72"
     },
     {
-      "id": 3000020,
-      "image": "https://p.rmjo.in/productSquare/q9dex9vc-500x500.jpg",
-      "title": "Deep Freezer  (100L)",
-      "price": 719,
-      "stock": "outofstock",
-      "category": "fridge",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000021,
-      "image": "https://p.rmjo.in/productSquare/i0qsgyhl-500x500.jpg",
-      "title": "Single Door Fridge (190 Litre - 2s)",
-      "price": 1189,
-      "stock": "outofstock",
-      "category": "fridge",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000022,
-      "image": "https://p.rmjo.in/productSquare/emb9c0lx-500x500.jpg",
-      "title": "Air Cooler 70  L",
-      "price": 569,
-      "stock": "outofstock",
-      "category": "aircoolers",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000023,
-      "image": "https://p.rmjo.in/productSquare/s0gav60g-500x500.jpg",
-      "title": "Air Cooler 35L",
-      "price": 379,
-      "stock": "outofstock",
-      "category": "aircoolers",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000024,
-      "image": "https://p.rmjo.in/productSquare/hpqgh67x-500x500.jpg",
-      "title": "Air Cooler 27 L",
-      "price": 299,
-      "stock": "outofstock",
-      "category": "aircoolers",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000025,
-      "image": "https://p.rmjo.in/productSquare/v1c75c2j-500x500.jpg",
-      "title": "Air Conditioner 1.5 Ton (2 Star)",
-      "price": 3699,
-      "stock": "outofstock",
-      "category": "airconditioner",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000026,
-      "image": "https://p.rmjo.in/productSquare/rdy4ni3d-500x500.jpg",
-      "title": "Front Load Washing Machine",
-      "price": 1189,
-      "stock": "outofstock",
-      "category": "washingmachine",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000027,
-      "image": "https://p.rmjo.in/productSquare/ex9dpggj-500x500.jpg",
-      "title": "Cloth Dryer",
-      "price": 929,
-      "stock": "outofstock",
-      "category": "clothdryer",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000028,
-      "image": "https://p.rmjo.in/productSquare/tapbng5v-500x500.jpg",
-      "title": "Smart LED TV - 49",
-      "price": 1339,
-      "stock": "outofstock",
-      "category": "telivision",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000029,
-      "image": "https://p.rmjo.in/productSquare/4bc5eken-500x500.jpg",
-      "title": "Smart LED TV- 55",
-      "price": 2349,
-      "stock": "outofstock",
-      "category": "telivision",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000030,
-      "image": "https://p.rmjo.in/productSquare/h62xocvl-500x500.jpg",
-      "title": "LED TV -  24",
-      "price": 569,
-      "stock": "outofstock",
-      "category": "telivision",
-      "days": "2 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000031,
-      "image": "https://p.rmjo.in/productSquare/rypid344-500x500.jpg",
-      "title": "Kent Maxx Water Purifier",
-      "price": 409,
-      "stock": "outofstock",
-      "category": "waterandairpurifiers",
-      "days": "4 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000032,
-      "image": "https://p.rmjo.in/productSquare/twnq03t0-500x500.jpg",
-      "title": "Kent Pride Plus Water Purifier",
-      "price": 779,
-      "stock": "outofstock",
-      "category": "waterandairpurifiers",
-      "days": "3 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
-    },
-    {
-      "id": 3000033,
-      "image": "https://p.rmjo.in/productSquare/683moqyy-500x500.jpg",
-      "title": "IFB Dishwasher",
-      "price": 1409,
-      "stock": "outofstock",
-      "category": "dishwasher",
-      "days": "5 days",
-      "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg"
+      "id": 18,
+      "img": "https://p.rmjo.in/productSquare/d25jc9wi-500x500.jpg",
+      "title": "Poise Study Table",
+      "price": "229",
+      "o_price": "72"
     }
   ],
   "wfh_Furniture": [
@@ -652,6 +476,7 @@
       "title": "OnePlus 7 (Mirror Gray)",
       "price": "1109",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 1
     },
@@ -661,6 +486,7 @@
       "title": "OnePlus 7T ( Frosted Silver )",
       "price": "1309",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 2
     },
@@ -670,6 +496,7 @@
       "title": "Samsung Galaxy S10+ (Black)",
       "price": "1659",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 3
     },
@@ -679,6 +506,7 @@
       "title": "OnePlus 7 Pro (Mirror Gray)",
       "price": "1669",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 4
     },
@@ -688,6 +516,7 @@
       "title": "Apple iPhone XS (Gold)",
       "price": "3279",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 5
     },
@@ -697,6 +526,7 @@
       "title": "Samsung Galaxy Note 10 (Aura Black)",
       "price": "2229",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 6
     },
@@ -706,6 +536,7 @@
       "title": "Apple iPhone XS Max (Silver)",
       "price": "3719",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 7
     },
@@ -715,6 +546,7 @@
       "title": "Apple iPhone X (Silver)",
       "price": "3039",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 8
     },
@@ -724,6 +556,7 @@
       "title": "Apple iPhone 11 Pro (Midnight Green)",
       "price": "3349",
       "days": "3 days",
+      "category": "smartphones",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 9
     },
@@ -733,6 +566,7 @@
       "title": "Dell Vostro 3490, Intel Core i3 processor , 10th Gen - (8 GB / 1 TB HDD / Win 10 Home , 14 inch, Black)",
       "price": "1229",
       "days": "3 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 10
     },
@@ -742,6 +576,7 @@
       "title": "MacBook Air Intel Core i5 processor , 5th Gen - ( 8 GB / 128 GB SSD / Mac High Sierra OS , 13.3 inch, Silver )",
       "price": "2169",
       "days": "3 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 11
     },
@@ -751,6 +586,7 @@
       "title": "MacBook Pro i5 - Powered by MF",
       "price": "8482",
       "days": "5 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 12
     },
@@ -760,6 +596,7 @@
       "title": "Windows i5/4GB - Powered by MF",
       "price": "3750",
       "days": "3 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 13
     },
@@ -769,6 +606,7 @@
       "title": "Windows i5/8GB - Powered by MF",
       "price": "4375",
       "days": "3 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 14
     },
@@ -778,6 +616,7 @@
       "title": "Windows i5/16GB - Powered by MF",
       "price": "4821",
       "days": "3 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 15
     },
@@ -787,6 +626,7 @@
       "title": "MacBook Pro i7 - Powered by MF",
       "price": "12373",
       "days": "3 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 16
     },
@@ -796,6 +636,7 @@
       "title": "MacBook Air - Powered by MF",
       "price": "6606",
       "days": "5 days",
+      "category": "laptops",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 17
     },
@@ -805,6 +646,7 @@
       "title": "Google Home",
       "price": "259",
       "days": "3 days",
+      "category": "smartdevices",
       "delivery": "https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg",
       "id": 18
     },
@@ -813,7 +655,8 @@
       "image": "https://p.rmjo.in/productSquare/5bcb7q0f-500x500.jpg",
       "title": "Apple iPhone 11 (Black)",
       "price": "2159",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 19
     },
     {
@@ -821,7 +664,8 @@
       "image": "https://p.rmjo.in/productSquare/c601su0m-500x500.jpg",
       "title": "Redmi K20 Pro (Carbon Black)",
       "price": "929",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 20
     },
     {
@@ -829,7 +673,8 @@
       "image": "https://p.rmjo.in/productSquare/z0kad2cr-500x500.jpg",
       "title": "Samsung Galaxy J8 (Black)",
       "price": "489",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 21
     },
     {
@@ -837,7 +682,8 @@
       "image": "https://p.rmjo.in/productSquare/vmbb6qhr-500x500.jpg",
       "title": "Apple iPhone XR 64GB (Black)",
       "price": "1839",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 22
     },
     {
@@ -845,7 +691,8 @@
       "image": "https://p.rmjo.in/productSquare/4gv7oyvc-500x500.jpg",
       "title": "Samsung Galaxy A7 (Gold)",
       "price": "689",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 23
     },
     {
@@ -853,7 +700,8 @@
       "image": "https://p.rmjo.in/productSquare/rnq0lpdu-500x500.jpg",
       "title": "Nokia 9 Pureview (Blue)",
       "price": "1549",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 24
     },
     {
@@ -861,7 +709,8 @@
       "image": "https://p.rmjo.in/productSquare/bm2uhtm8-500x500.jpg",
       "title": "Redmi K20 (Carbon Black)",
       "price": "739",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 25
     },
     {
@@ -869,7 +718,8 @@
       "image": "https://p.rmjo.in/productSquare/0syr4nkn-500x500.jpg",
       "title": "Apple iPhone 11 Pro (Space Grey)",
       "price": "3349",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 26
     },
     {
@@ -877,7 +727,8 @@
       "image": "https://p.rmjo.in/productSquare/fgcl0o0i-500x500.jpg",
       "title": "Apple iPhone 6S (Space Grey)",
       "price": "799",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 27
     },
     {
@@ -885,7 +736,8 @@
       "image": "https://p.rmjo.in/productSquare/hzh6xems-500x500.jpg",
       "title": "OnePlus 7T Pro (Haze Blue)",
       "price": "1849",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 28
     },
     {
@@ -893,7 +745,8 @@
       "image": "https://p.rmjo.in/productSquare/vw8fgse9-500x500.jpg",
       "title": "Apple iPhone 8 (Gold)",
       "price": "2169",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 29
     },
     {
@@ -901,7 +754,8 @@
       "image": "https://p.rmjo.in/productSquare/r64xg3yw-500x500.jpg",
       "title": "Galaxy Note 10 Plus (Aura Glow)",
       "price": "2729",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 30
     },
     {
@@ -909,7 +763,8 @@
       "image": "https://p.rmjo.in/productSquare/qmf066y6-500x500.jpg",
       "title": "Vivo V11 Pro ( Gold )",
       "price": "839",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 31
     },
     {
@@ -917,7 +772,8 @@
       "image": "https://p.rmjo.in/productSquare/dgsj2eoz-500x500.jpg",
       "title": "Oppo A7 ( Glaze Blue )",
       "price": "579",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 32
     },
     {
@@ -925,7 +781,8 @@
       "image": "https://p.rmjo.in/productSquare/40nn18do-500x500.jpg",
       "title": "Oppo Reno 2 Z (Luminous Black)",
       "price": "969",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 33
     },
     {
@@ -933,7 +790,8 @@
       "image": "https://p.rmjo.in/productSquare/fycty5jp-500x500.jpg",
       "title": "Oppo A7 ( Glaring Gold )",
       "price": "579",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 34
     },
     {
@@ -941,7 +799,8 @@
       "image": "https://p.rmjo.in/productSquare/ioqc6iq4-500x500.jpg",
       "title": "Samsung Galaxy A70 (Blue)",
       "price": "979",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 35
     },
     {
@@ -949,7 +808,8 @@
       "image": "https://p.rmjo.in/productSquare/jsjogms9-500x500.jpg",
       "title": "Vivo Y17 ( Mineral Blue )",
       "price": "539",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 36
     },
     {
@@ -957,7 +817,8 @@
       "image": "https://p.rmjo.in/productSquare/vhk0dft5-500x500.jpg",
       "title": "Galaxy S10e (Black)",
       "price": "1789",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 37
     },
     {
@@ -965,7 +826,8 @@
       "image": "https://p.rmjo.in/productSquare/5mqdpbn0-500x500.jpg",
       "title": "Vivo V15 Pro (Ruby Red)",
       "price": "879",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 38
     },
     {
@@ -973,7 +835,8 @@
       "image": "https://p.rmjo.in/productSquare/t1yb222s-500x500.jpg",
       "title": "Oppo F11 (Fluorite Purple)",
       "price": "589",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 39
     },
     {
@@ -981,7 +844,8 @@
       "image": "https://p.rmjo.in/productSquare/nmc2vcgx-500x500.jpg",
       "title": "Samsung Galaxy A50 (White, 6GB RAM)",
       "price": "739",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 40
     },
     {
@@ -989,7 +853,8 @@
       "image": "https://p.rmjo.in/productSquare/tikbvx4g-500x500.jpg",
       "title": "Vivo V11 Pro (Supernova Red)",
       "price": "849",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 41
     },
     {
@@ -997,7 +862,8 @@
       "image": "https://p.rmjo.in/productSquare/bsoatj8n-500x500.jpg",
       "title": "Redmi Note 6 Pro (Red)",
       "price": "569",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 42
     },
     {
@@ -1005,7 +871,8 @@
       "image": "https://p.rmjo.in/productSquare/b1ya80ae-500x500.jpg",
       "title": "Galaxy A9 (Lemonade Blue)",
       "price": "1139",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 43
     },
     {
@@ -1013,7 +880,8 @@
       "image": "https://p.rmjo.in/productSquare/d63957sv-500x500.jpg",
       "title": "Samsung Galaxy J8 (Blue)",
       "price": "539",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 44
     },
     {
@@ -1021,7 +889,8 @@
       "image": "https://p.rmjo.in/productSquare/grnwuvgv-500x500.jpg",
       "title": "Apple iPhone XS (Silver)",
       "price": "3389",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 45
     },
     {
@@ -1029,7 +898,8 @@
       "image": "https://p.rmjo.in/productSquare/r05w1ix4-500x500.jpg",
       "title": "Samsung Galaxy A50 (White, 4GB RAM)",
       "price": "629",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 46
     },
     {
@@ -1037,7 +907,8 @@
       "image": "https://p.rmjo.in/productSquare/bvpxqjj5-500x500.jpg",
       "title": "Galaxy A50 (Blue)",
       "price": "619",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 47
     },
     {
@@ -1045,7 +916,8 @@
       "image": "https://p.rmjo.in/productSquare/cji6uh7h-500x500.jpg",
       "title": "Galaxy A50s (Prism Crush White)",
       "price": "779",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 48
     },
     {
@@ -1053,7 +925,8 @@
       "image": "https://p.rmjo.in/productSquare/y7bmqk1a-500x500.jpg",
       "title": "Galaxy S10+ (White)",
       "price": "2399",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 49
     },
     {
@@ -1061,7 +934,8 @@
       "image": "https://p.rmjo.in/productSquare/d7kwvrrk-500x500.jpg",
       "title": "Galaxy Note 9 (Blue)",
       "price": "2319",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 50
     },
     {
@@ -1069,7 +943,8 @@
       "image": "https://p.rmjo.in/productSquare/6zyn96ba-500x500.jpg",
       "title": "Apple iPhone 8 (Silver)",
       "price": "2049",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 51
     },
     {
@@ -1077,7 +952,8 @@
       "image": "https://p.rmjo.in/productSquare/6pozheic-500x500.jpg",
       "title": "Oppo A5 (Blue)",
       "price": "479",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 52
     },
     {
@@ -1085,7 +961,8 @@
       "image": "https://p.rmjo.in/productSquare/16h705m1-500x500.jpg",
       "title": "Samsung Galaxy A30 (Blue)",
       "price": "529",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 53
     },
     {
@@ -1093,7 +970,8 @@
       "image": "https://p.rmjo.in/productSquare/0a2dwyu2-500x500.jpg",
       "title": "Redmi K20 Pro (Blue)",
       "price": "1049",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 54
     },
     {
@@ -1101,7 +979,8 @@
       "image": "https://p.rmjo.in/productSquare/1i5bahsa-500x500.jpg",
       "title": "Apple iPhone XR (Red)",
       "price": "2189",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 55
     },
     {
@@ -1109,7 +988,8 @@
       "image": "https://p.rmjo.in/productSquare/le2jcaof-500x500.jpg",
       "title": "Apple iPhone 7 Plus (Gold)",
       "price": "1309",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 56
     },
     {
@@ -1117,7 +997,8 @@
       "image": "https://p.rmjo.in/productSquare/xxdjq0k2-500x500.jpg",
       "title": "Galaxy Note 8 (Black)",
       "price": "1749",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 57
     },
     {
@@ -1125,7 +1006,8 @@
       "image": "https://p.rmjo.in/productSquare/t0rotvxl-500x500.jpg",
       "title": "Samsung Galaxy S9 (Black)",
       "price": "1589",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 58
     },
     {
@@ -1133,7 +1015,8 @@
       "image": "https://p.rmjo.in/productSquare/tmp99edr-500x500.jpg",
       "title": "Google Pixel 2 (Black)",
       "price": "1699",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 59
     },
     {
@@ -1141,7 +1024,8 @@
       "image": "https://p.rmjo.in/productSquare/amn1b6n3-500x500.jpg",
       "title": "OnePlus 6T (Mirror Black)",
       "price": "1199",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 60
     },
     {
@@ -1149,7 +1033,8 @@
       "image": "https://p.rmjo.in/productSquare/6my2u1tu-500x500.jpg",
       "title": "Redmi Note 6 Pro (Black)",
       "price": "399",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 61
     },
     {
@@ -1157,7 +1042,8 @@
       "image": "https://p.rmjo.in/productSquare/swo3auxj-500x500.jpg",
       "title": "Poco F1",
       "price": "669",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 62
     },
     {
@@ -1165,7 +1051,8 @@
       "image": "https://p.rmjo.in/productSquare/6ly5ckk0-500x500.jpg",
       "title": "Honor 8X (Blue)",
       "price": "609",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 63
     },
     {
@@ -1173,7 +1060,8 @@
       "image": "https://p.rmjo.in/productSquare/ng1wgdjv-500x500.jpg",
       "title": "Oppo F11 Pro (Thunder Black)",
       "price": "759",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 64
     },
     {
@@ -1181,7 +1069,8 @@
       "image": "https://p.rmjo.in/productSquare/siehnbg7-500x500.jpg",
       "title": "Apple iPhone XR 128GB (White)",
       "price": "2199",
-      "availability": "outofstock",
+      "category": "smartphones",
+      "availability": "Out of stock",
       "id": 65
     },
     {
@@ -1189,7 +1078,8 @@
       "image": "https://p.rmjo.in/productSquare/giv8gyoz-500x500.jpg",
       "title": "Lenovo IdeaPad S340, Intel Core i3 processor, 10th Gen - (8GB / 1TB HDD / Win 10 Home, 14 inch, Platinum Grey)",
       "price": "1229",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 66
     },
     {
@@ -1197,7 +1087,8 @@
       "image": "https://p.rmjo.in/productSquare/pjxdupjf-500x500.jpg",
       "title": "HP EliteBook 820 G3, Intel Core i5 processor, 6th Gen - (8 GB / 500 GB HDD / Win 10 Home, 12.5 inch, Silver)",
       "price": "1029",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 67
     },
     {
@@ -1205,7 +1096,8 @@
       "image": "https://p.rmjo.in/productSquare/nheby11s-500x500.jpg",
       "title": "HP 15 Notebook , Intel Core i3 processor , 7th Gen  - (4GB / 1TB HDD / Win 10 Home OS / 15.6 inch/ Silver )",
       "price": "1069",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 68
     },
     {
@@ -1213,7 +1105,8 @@
       "image": "https://p.rmjo.in/productSquare/w1un86lr-500x500.jpg",
       "title": "Dell Latitude , Intel Core i5 processor , 8th Gen - ( 8 GB / 500 GB HDD / Win 10 Pro OS , 14 inch, Black)",
       "price": "2069",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 69
     },
     {
@@ -1221,7 +1114,8 @@
       "image": "https://p.rmjo.in/productSquare/298cbqj0-500x500.jpg",
       "title": "Lenovo IdeaPad 3, Intel Core i5 processor, 10th Gen - (8GB / 1TB HDD / Win 10 Home, 15.6 inch, Platinum Grey)",
       "price": "1489",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 70
     },
     {
@@ -1229,7 +1123,8 @@
       "image": "https://p.rmjo.in/productSquare/66zdf9n1-500x500.jpg",
       "title": "New Apple MacBook Air 13.3 inch (Intel Core i3 10th Gen/8GB/256GB/macOS High Sierra Home/Space Grey)",
       "price": "2809",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 71
     },
     {
@@ -1237,7 +1132,8 @@
       "image": "https://p.rmjo.in/productSquare/9vd42o0s-500x500.jpg",
       "title": "MacBook Pro Intel Core i5 processor , 7th Gen - ( 8 GB / 128 GB SSD / Mac High Sierra OS,13.3 inch,Space Grey )",
       "price": "3429",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 72
     },
     {
@@ -1245,15 +1141,17 @@
       "image": "https://p.rmjo.in/productSquare/cfa7meld-500x500.jpg",
       "title": "Lenovo Ideapad 330 , Intel Core i3 processor , 7th Gen  - (4GB / 1TB HDD / Win 10 Home OS / 15.6 inch / Platinum Grey)",
       "price": "1169",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 73
     },
     {
       "image2": "https://www.rentomojo.com/bangalore/electronics/rent-avita-liber/102364",
       "image": "https://p.rmjo.in/productSquare/pjszprnr-500x500.jpg",
-      "title": "Avita Liber, Intel Core i5, 8th Gen - (8GB / 256GB SSD / Win 10 Home OS / 14-inch / Space Grey)",
+      "title": "Intel Core i5, 8th Gen - (8GB / 256GB SSD / Win 10 Home OS / 14-inch / Space Grey)",
       "price": "1309",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 74
     },
     {
@@ -1261,7 +1159,8 @@
       "image": "https://p.rmjo.in/productSquare/2z3gd88n-500x500.jpg",
       "title": "Windows Core i7 4th/5th Gen 16GB RAM 256GB SSD / 500GB HDD",
       "price": "4553",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 75
     },
     {
@@ -1269,7 +1168,8 @@
       "image": "https://p.rmjo.in/productSquare/etaw8fan-500x500.jpg",
       "title": "Windows Core i7 4th/5th Gen 16GB RAM 512GB SSD / 1TB HDD",
       "price": "4981",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 76
     },
     {
@@ -1277,7 +1177,8 @@
       "image": "https://p.rmjo.in/productSquare/recuipb6-500x500.jpg",
       "title": "Windows Core i5 4th/5th Gen 8GB RAM 256GB SSD / 500GB HDD",
       "price": "3129",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 77
     },
     {
@@ -1285,7 +1186,8 @@
       "image": "https://p.rmjo.in/productSquare/5qvwh1o4-500x500.jpg",
       "title": "Macbook Pro i7 2015 16GB RAM 512GB SSD Catalina OS",
       "price": "9106",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 78
     },
     {
@@ -1293,7 +1195,8 @@
       "image": "https://p.rmjo.in/productSquare/d62r9noo-500x500.jpg",
       "title": "Macbook Pro i5 2015 8GB RAM 256GB SSD Catalina OS",
       "price": "5410",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 79
     },
     {
@@ -1301,7 +1204,8 @@
       "image": "https://p.rmjo.in/productSquare/140lcwv3-500x500.jpg",
       "title": "Dell XPS 13 , Intel Core i5 processor , 8th Gen - ( 8 GB / 256 GB SSD / Win 10 Pro OS , 13.3 inch,Silver )",
       "price": "4139",
-      "availability": "outofstock",
+      "category": "laptops",
+      "availability": "Out of stock",
       "id": 80
     },
     {
@@ -1309,15 +1213,17 @@
       "image": "https://p.rmjo.in/productSquare/rsuzkom0-500x500.jpg",
       "title": "Amazon Fire TV Stick",
       "price": "129",
-      "availability": "outofstock",
+      "category": "smartdevices",
+      "availability": "Out of stock",
       "id": 81
     },
     {
       "image2": "https://www.rentomojo.com/bangalore/electronics/rent-amazon-echo/91636",
       "image": "https://p.rmjo.in/productSquare/wph9nyr6-500x500.jpg",
       "title": "Amazon Echo",
+      "category": "smartdevices",
       "price": "229",
-      "availability": "outofstock",
+      "availability": "Out of stock",
       "id": 82
     },
     {
@@ -1325,7 +1231,8 @@
       "image": "https://p.rmjo.in/productSquare/knrbmajt-500x500.jpg",
       "title": "boAt AAVANTE",
       "price": "189",
-      "availability": "outofstock",
+      "category": "smartdevices",
+      "availability": "Out of stock",
       "id": 83
     },
     {
@@ -1333,7 +1240,8 @@
       "image": "https://p.rmjo.in/productSquare/dvlj6ic5-500x500.jpg",
       "title": "Samsung Galaxy Tab S4 (Black)",
       "price": "1789",
-      "availability": "outofstock",
+      "category": "tablets",
+      "availability": "Out of stock",
       "id": 84
     },
     {
@@ -1341,7 +1249,8 @@
       "image": "https://p.rmjo.in/productSquare/ojeg5074-500x500.jpg",
       "title": "Apple iPad Pro 11 (Space Grey)",
       "price": "2769",
-      "availability": "outofstock",
+      "category": "tablets",
+      "availability": "Out of stock",
       "id": 85
     },
     {
@@ -1349,7 +1258,8 @@
       "image": "https://p.rmjo.in/productSquare/prlx76wq-500x500.jpg",
       "title": "Apple iPad 10.2 inch (Grey)",
       "price": "1369",
-      "availability": "outofstock",
+      "category": "tablets",
+      "availability": "Out of stock",
       "id": 86
     }
   ],
@@ -3383,7 +3293,7 @@
       "id": 190
     }
   ],
-  "product":[
+  "product": [
     {
       "id": 300001,
       "image": "https://p.rmjo.in/productSquare/xev0b5yi-500x500.jpg",
@@ -6744,5 +6654,4 @@
       "id": 190
     }
   ]
- 
 }

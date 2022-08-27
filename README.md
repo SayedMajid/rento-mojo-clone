@@ -34,26 +34,26 @@
 
 #### Day 3 --> ( Thursday ) --> 3 Issues, 7 Tasks | Per Individual 
 
-    - Abdullah --> 
-    - Majid --> 
-    - Narayan --> 
-    - Priyanshu --> 
-    - Rahim --> 
+    - Abdullah --> Pending  
+    - Majid --> Completed
+    - Narayan --> Completed
+    - Priyanshu --> Completed
+    - Rahim --> Completed
 
 #### Day 4 --> ( Friday ) --> 4 Issues , 8 Task
 
-    - Abdullah --> 
-    - Majid --> 
-    - Narayan --> 
-    - Priyanshu --> 
-    - Rahim --> 
+    - Abdullah --> Pending
+    - Majid --> Completed
+    - Narayan --> Completed
+    - Priyanshu --> Completed
+    - Rahim --> Completed
 
 #### Day 5 --> ( Saturday ) --> 4 Issues ( login, cart Page  ) , 7 Task
 
-    - Abdullah --> 
-    - Majid --> 
-    - Narayan --> 
-    - Priyanshu --> 
-    - Rahim --> 
+    - Abdullah --> Pending
+    - Majid --> Completed
+    - Narayan --> Completed
+    - Priyanshu --> Completed
+    - Rahim --> Completed
 
 <hr/>

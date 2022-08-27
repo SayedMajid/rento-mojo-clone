@@ -1,7 +1,6 @@
-
 import React, { useEffect, useState } from "react";
 import { Stack, Image, Select, Input, Text, Flex, Box } from "@chakra-ui/react";
-import "./navbar.css"
+import "./navbar.css";
 import rentomojologo from "../Components/Icons/rentomojologo.png";
 import rmlogosmall from "../Components/Icons/rmlogosmall.png";
 import { BsSearch, BsCart3 } from "react-icons/bs";
@@ -15,111 +14,141 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-} from '@chakra-ui/react'
+} from "@chakra-ui/react";
 import Login from "./Login";
 import axios from "axios";
 
-
-
 const Navbar = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [searchInput, setSearchInput] = useState("");
-  const [ApiData,setApiData] = useState([]);
+  const [ApiData, setApiData] = useState([]);
   const [filteredResults, setFilteredResults] = useState([]);
+  const [data, setData] = useState([]);
 
-  useEffect(()=>{
-    axios.get(`http://localhost:8080/product`)
-          .then((r)=>{
-            setApiData(r.data);
-            // console.log(r.data)
-          })
-  },[])
+  useEffect(() => {
+    if (data.length === 0) {
+      axios.get("http://localhost:8080/cart").then((res) => setData(res.data));
+    }
+  }, []);
+
+  console.log(data);
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/product`).then((r) => {
+      setApiData(r.data);
+      // console.log(r.data)
+    });
+  }, [searchInput]);
 
   const searchItems = (searchValue) => {
-    setSearchInput(searchValue)
-    const filterdata = ApiData.filter((item)=>{
-      return Object.values(item).join("").toLowerCase().includes(searchInput.toLowerCase())
-    })
-    setFilteredResults(filterdata)
-  }
+    setSearchInput(searchValue);
+    const filterdata = ApiData.filter((item) => {
+      return Object.values(item)
+        .join("")
+        .toLowerCase()
+        .includes(searchInput.toLowerCase());
+    });
+    setFilteredResults(filterdata);
+  };
 
   // console.log(searchInput);
-  console.log(filteredResults)
-
-
+  console.log(filteredResults);
 
   return (
-   
-      <Flex  justifyContent="space-between" alignItems="center"p="10px" width="100%" gap="10px" background="white" zIndex="9999" pl={{base:"5%",md:"",xl:"10%"}} pr={{base:"5%",md:"",xl:"10%"}} position="sticky" top="0" left="0" boxShadow=" 2px 2px 8px rgba(0,0,0,0.2)">
-        <Image
-          src={rentomojologo}
-          alt="errorloading logo"
-          width={"190px"}
-          height={"33px"}
-          display={{base:"none",md:"none",xl:"inline-flex"}}
-          onClick={()=>navigate(`/`)}
-          cursor={"pointer"}
-        />
-        <Image
-          src={rmlogosmall}
-          alt="errorloading logo"
-          width={"auto"}
-          height={"33px"}
-          display={{base:"inline-flex",md:"inline-flex",xl:"none"}}
-          onClick={()=>navigate(`/`)}
-          cursor={"pointer"}
+    <Flex
+      justifyContent="space-between"
+      alignItems="center"
+      p="10px"
+      width="100%"
+      gap="10px"
+      background="white"
+      zIndex="1"
+      pl={{ base: "5%", md: "", xl: "10%" }}
+      pr={{ base: "5%", md: "", xl: "10%" }}
+      position="sticky"
+      top="0"
+      left="0"
+      boxShadow=" 2px 2px 8px rgba(0,0,0,0.2)"
+    >
+      <Image
+        src={rentomojologo}
+        alt="errorloading logo"
+        width={"190px"}
+        height={"33px"}
+        display={{ base: "none", md: "none", xl: "inline-flex" }}
+        onClick={() => navigate(`/`)}
+        cursor={"pointer"}
+      />
+      <Image
+        src={rmlogosmall}
+        alt="errorloading logo"
+        width={"auto"}
+        height={"33px"}
+        display={{ base: "inline-flex", md: "inline-flex", xl: "none" }}
+        onClick={() => navigate(`/`)}
+        cursor={"pointer"}
+      />
+
+      <Select
+        width={"180px"}
+        display={{ base: "none", md: "none", lg: "inline-flex" }}
+      >
+        <option value="">Mumbai</option>
+        <option value="">Pune</option>
+        <option value="">Banglore</option>
+        <option value="">Delhi</option>
+      </Select>
+      <Stack
+        className="searchbar"
+        direction={"row"}
+        border={"1px solid rgba(0,0,0,0.2)"}
+        padding={"0px 15px"}
+        alignItems="center"
+        borderRadius={"10px"}
+        display={{ base: "none", md: "inline-flex" }}
+      >
+        <Input
+          variant={"unstyled"}
+          placeholder="Search for products"
+          htmlSize={50}
+          onChange={(e) => searchItems(e.target.value)}
+          p="10px"
         />
 
-        <Select width={"180px"} display={{base:"none",md:"none",lg:"inline-flex"}}>
-          <option value="">Mumbai</option>
-          <option value="">Pune</option>
-          <option value="">Banglore</option>
-          <option value="">Delhi</option>
-        </Select>
-        <Stack
-          className="searchbar"
-          direction={"row"}
-          border={"1px solid rgba(0,0,0,0.2)"}
-          padding={"0px 15px"}
-          alignItems="center"
-          borderRadius={"10px"}
-          display={{base:"none",md:"inline-flex"}}
-        >
-          <Input
-            variant={"unstyled"}
-            placeholder="Search for products"
-            htmlSize={50}
-            onChange={(e)=>searchItems(e.target.value)}
-            p="10px"
-          />
-          
-          <BsSearch cursor={"pointer"}/>
-          { filteredResults.length >0 && (
-          <Box className='abc' >
-            {filteredResults.map((item)=>{
-            return ( <div  className="searchmap">
-              
-              <div style={{width:"30px", height:"30px"}}>
-                <img src={item.image} style={{width:"100%"}}></img>
-              </div>
-              {/* <a href={`/${item.category}/${item.title}/${item.id}`}>
+        {/* <BsSearch cursor={"pointer"} /> */}
+        {filteredResults.length > 0 && (
+          <Box className="abc" display={ searchInput.length === 0 ? "none" : "inline" } >
+            {filteredResults.map((item) => {
+              return (
+                <div className="searchmap">
+                  <div style={{ width: "30px", height: "30px" }}>
+                    <img src={item.image} style={{ width: "100%" }}></img>
+                  </div>
+                  {/* <a href={`/${item.category}/${item.title}/${item.id}`}>
                 <p>{item.title}</p>
               </a> */}
-              <p>{item.title}</p>
-             
-            </div>)
-        })}
+                  <p>{item.title}</p>
+                </div>
+              );
+            })}
           </Box>
         )}
-        </Stack>
-        
-        <Stack direction={"row"} alignItems="center" marginRight={20} cursor={"pointer"} onClick={()=>navigate(`/cart`)}>
-          <BsCart3  />
-          <Text display={{base:"inline-flex",md:"none",lg:"inline-flex"}}>Cart</Text>
-        </Stack>
-        <Login />
-      </Flex>
-    
+      </Stack>
+
+      <Stack
+        direction={"row"}
+        alignItems="center"
+        marginRight={20}
+        cursor={"pointer"}
+        onClick={() => navigate(`/cart`)}
+      >
+        <BsCart3 />
+        <Text display={{ base: "inline-flex", md: "none", lg: "inline-flex" }}>
+          Cart
+        </Text>
+      </Stack>
+      <Login />
+    </Flex>
   );
 };
 

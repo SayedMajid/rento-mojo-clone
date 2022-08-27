@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { Box, Divider, Flex, Image, Tag, TagLabel, Text } from "@chakra-ui/react";
 import { Navigate, useNavigate } from "react-router-dom";
 
-const ProductsCard = ({ days, delivery, id, image, price, title ,stock,goTo}) => {
+
+
+
+const ProductsCard = ({ days, delivery, id, image, price, title ,stock, goTo}) => {
+
   const [heart, setHeart] = useState(false);
 
   const navigate=useNavigate();
@@ -15,8 +19,7 @@ const ProductsCard = ({ days, delivery, id, image, price, title ,stock,goTo}) =>
       border="1px solid #e9e9e9"
       borderRadius="5px"
       key={id}
-      // onClick={(e)=>navigate(`/Appliances/${id}`)}
-      // onClick={(e)=>navigate(`/Furniture/${id}`)}
+
       onClick={(e)=>navigate(`/${goTo}/${id}`)}
     >
       <Flex
