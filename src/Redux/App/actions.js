@@ -36,3 +36,15 @@ export const getAppliances = (params) => (dispatch) => {
     )
     .catch((e) => dispatch({ type: types.GET_APPLIANCES_FAILURE, payload: e }));
 };
+
+
+
+export const addToCart=(params)=>(dispatch)=>{
+
+  dispatch({type:types.ADD_TO_CART_REQUEST})
+  axios
+  .post("http://localhost:8080/cart",params)
+  .then((r)=>dispatch({type:types.ADD_TO_CART_SUCCESS,payload:r.payload}))
+  .catch((e)=>dispatch({type:types.ADD_TO_CART_FAILURE}))
+}
+

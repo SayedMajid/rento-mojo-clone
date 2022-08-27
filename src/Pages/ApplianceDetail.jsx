@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Box, Flex, Image, Text, Button , UnorderedList , ListItem} from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Text,
+  Button,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import ButtonSection from "./ButtonSection";
-import { getAppliances } from "../Redux/App/actions";
+import { addToCart, getAppliances } from "../Redux/App/actions";
 import Slider from "../misc/ProductsPageslider";
 
 const ApplianceDetail = () => {
   const date = new Date().toLocaleDateString();
-  const [sliderValue, setSliderValue] = useState("50%");
+  const [sliderValue, setSliderValue] = useState(0);
 
   const dispatch = useDispatch();
   const { id } = useParams();
@@ -33,18 +41,32 @@ const ApplianceDetail = () => {
     }
   }, [appliances, id, location]);
 
+
+  //handle cart
+
+  const handleCart=(e)=>{
+    
+   const cartparams={
+      title: currentAppliance.title,
+      price: currentAppliance.price,
+      image: currentAppliance.image,
+      category: currentAppliance.category,
+      deposite: `${Number(currentAppliance.price)+Number(150)}`
+
+    }
+    dispatch(addToCart(cartparams));
+  }
+
   return (
     <div>
       {" "}
       <Box className="App" position="relative">
-        <ButtonSection />
+        <ButtonSection price={currentAppliance.price} />
         <Box
-          border="1px solid #e9e9e9"
           w={{ xl: "100%", md: "88%", base: "90%" }}
           h="auto"
           m="auto"
           p="2px"
-          
           display="flex"
           flexDirection="column"
           position="relative"
@@ -67,7 +89,7 @@ const ApplianceDetail = () => {
               </Box>
               <Box
                 display={{ xl: "none", md: "inline", base: "inline" }}
-                border="1px solid gray"
+                border="1px solid #e9e9e9"
               >
                 {/* Slider for medium / small screen */}
                 <Flex
@@ -75,7 +97,6 @@ const ApplianceDetail = () => {
                   w="100%"
                   h="max-content"
                   flexDirection="column"
-                  boxSizing="border-box"
                   p="20px"
                   borderRadius="2px"
                   mb="16px"
@@ -83,9 +104,6 @@ const ApplianceDetail = () => {
                   <Flex
                     w="100%"
                     flexDirection="column"
-                    boxSizing="border-box"
-                    borderRadius="2px"
-                    mb="0px"
                   >
                     <Text mb="10px" fontSize={"18px"}>
                       {currentAppliance.title}
@@ -106,6 +124,8 @@ const ApplianceDetail = () => {
               <Box border="1px solid #e9e9e9 ">
                 {/* //product detail */}
 
+                
+
                 <Flex
                   border="1px solid #e9e9e9"
                   justifyContent={"space-between"}
@@ -115,15 +135,30 @@ const ApplianceDetail = () => {
                 >
                   <Flex display={{ base: "block", md: "block", xl: "none" }}>
                     <Text>&#8377;{currentAppliance.price}/mo</Text>
+                    <Text fontSize="10px">Monthly Rent </Text>
                   </Flex>
                   <Flex display={{ base: "block", md: "block", xl: "none" }}>
                     <Text>
                       &#8377; {Number(currentAppliance.price) + 150}/mo
                     </Text>
+                    <Text fontSize="10px">Refundable Deposit </Text>
                   </Flex>
                 </Flex>
 
                 {/* //details of product */}
+
+                <Flex border="2px solid  #e9e9e9" justifyContent="center" gap="20px" alignItems="center" p="20px">
+                  <Image
+                    src="https://www.rentomojo.com/public/images/icons/virusSafetyGreen.png"
+                    width="50px"
+                  />
+                  <Text width="50%" maxHeight="150px" overflow="clip">
+                    Safety precautions during COVID-19. We’re taking additional
+                    steps and precautionary measures to protect our community
+                    from COVID-19.
+                  </Text>
+                  <Text>Know More...</Text>
+                </Flex>
 
                 <Flex p="10px">
                   <Text fontSize="20px" fontWeight="500">
@@ -132,47 +167,54 @@ const ApplianceDetail = () => {
                 </Flex>
                 <Flex>
                   <Flex width={{ base: "100%", md: "100%", xl: "60%" }}>
-                    <Image src={currentAppliance.image} />
+                    <Image src={currentAppliance.image}  display={{base:"none",md:"none",xl:"inline"}}/>
                   </Flex>
-                  <Flex direction="column" p="25px">
+                  <Flex direction="column" p="25px" width={{base:"90%",md:"auto",xl:"auto"}}>
                     <Text mb="10px" fontSize={"18px"} fontWeight="500">
                       {" "}
                       {currentAppliance.title}
                     </Text>
-                    <Text mb="20px">
+                    <Text mb="20px" >
                       There’s always room for more applices with a{" "}
-                      {currentAppliance.title}. Designed for the modern home and smart brains,
-                      this {currentAppliance.category} effortlessly reduces the
-                      cost of electricity. It reduces your efforts and makes
-                      your life easy and entertaining. With best-in-class
-                      features, corral your way to your favorite work.
+                      {currentAppliance.title}. Designed for the modern home and
+                      smart brains, this {currentAppliance.category}{" "}
+                      effortlessly reduces the cost of electricity. It reduces
+                      your efforts and makes your life easy and entertaining.
+                      With best-in-class features, corral your way to your
+                      favorite work.
                     </Text>
 
                     <Text fontSize="16px" fontWeight="500">
                       Dimentions
                     </Text>
-                    
+
                     <UnorderedList>
-                    <ListItem>25"L x 21"B x 49"H</ListItem>
+                      <ListItem>25"L x 21"B x 49"H</ListItem>
                     </UnorderedList>
 
                     <Text fontSize="16px" fontWeight="500">
                       Safety & Usage
                     </Text>
-                    
+
                     <UnorderedList>
                       <ListItem>Check supply at regular interval</ListItem>
-                      <ListItem>Avoid placing hot items in the machine</ListItem>
-                      <ListItem>Use a stabilizer in case of voltage fluctuation</ListItem>
+                      <ListItem>
+                        Avoid placing hot items in the machine
+                      </ListItem>
+                      <ListItem>
+                        Use a stabilizer in case of voltage fluctuation
+                      </ListItem>
                     </UnorderedList>
 
                     <Text fontSize="16px" fontWeight="500">
-                    Features & Specs
+                      Features & Specs
                     </Text>
-                    
+
                     <UnorderedList>
                       <ListItem>Capacity/Size : 180-200L</ListItem>
-                      <ListItem>Whirlpool/Haier/Godrej/Samsung/Voltbek</ListItem>
+                      <ListItem>
+                        Whirlpool/Haier/Godrej/Samsung/Voltbek
+                      </ListItem>
                       <ListItem>Energy rating: 4 Star and above</ListItem>
                     </UnorderedList>
                   </Flex>
@@ -256,7 +298,7 @@ const ApplianceDetail = () => {
                     <Image src="https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg" />
                     <Text fontSize="10px">Delivery by {date}</Text>
                   </Flex>
-                  <Button bg="red.500" color="white" width={"100%"}>
+                  <Button bg="red.500" color="white" width={"100%"} onClick={handleCart}>
                     {/* ADD to Cart button */}
                     Book your Plan
                   </Button>
