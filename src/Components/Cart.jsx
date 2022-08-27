@@ -8,12 +8,16 @@ import {
   Container,
   Select,
   Button,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
+import { useDispatch, useSelector } from "react-redux";
+import { getCartData } from "../Redux/App/actions";
 
 const Cart = () => {
   const [cartData, setCartData] = useState([]);
   const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
   const toast = useToast();
 
   const getCart = () => {
@@ -22,11 +26,7 @@ const Cart = () => {
       .then((res) => setCartData(res.data))
       .catch(() => null);
   };
-  useEffect(() => {
-    getCart();
-  }, []);
 
-  //console.log(cartData)
   let year = new Date().getFullYear();
   let month = new Date().getMonth();
   let date = new Date().getDate();
@@ -41,20 +41,22 @@ const Cart = () => {
           description: "1 Item has been Removed From Your Cart",
           position: "top",
           status: "success",
-          duration: 4000,
+          duration: 2000,
           isClosable: true,
         });
       })
       .catch(() => null);
+
+      setTimeout(() => {
+        dispatch(getCartData())
+      },1000)
   };
 
   let total = 0;
-  //total=total*quantity
+
   if (cartData.length > 0) {
     cartData.map((d) => (total += Number(d.price) * quantity));
   }
-  //    //console.log(quantity)
-  //    //console.log(total)
 
   const handleBuy = () => {
     document.getElementById("buy").style.backgroundColor = "green";
@@ -69,8 +71,12 @@ const Cart = () => {
     });
   };
 
+  useEffect(() => {
+    getCart();
+  }, []);
+
   return cartData.length === 0 ? (
-    <Box style={{}}>
+    <Box>
       <Box
         style={{
           width: "40%",
@@ -639,7 +645,7 @@ const Cart = () => {
                 >
                   <Select
                     onChange={(e) => setQuantity(e.target.value)}
-                    style={{ width: "100%" , marginTop: "2%"  }}
+                    style={{ width: "100%", marginTop: "2%" }}
                     fontSize={{
                       sm: "13px",
                       md: "14px",
@@ -656,7 +662,7 @@ const Cart = () => {
                     <option value="5">5</option>
                   </Select>
                   <Select
-                    style={{ width: "100%" , marginTop: "2%"  }}
+                    style={{ width: "100%", marginTop: "2%" }}
                     fontSize={{
                       sm: "13px",
                       md: "14px",

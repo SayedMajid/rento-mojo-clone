@@ -43,12 +43,31 @@ export const getAppliances = (params) => (dispatch) => {
     .catch((e) => dispatch({ type: types.GET_APPLIANCES_FAILURE, payload: e }));
 };
 
-export const addToCart = (params) => (dispatch) => {
-  dispatch({ type: types.ADD_TO_CART_REQUEST });
-  return axios
-    .post("http://localhost:8080/cart", params)
+// export const addToCart = (params) => (dispatch) => {
+//   dispatch({ type: types.ADD_TO_CART_REQUEST });
+//   return axios
+//     .post("http://localhost:8080/cart", params)
+//     .then((r) => dispatch({ type: types.ADD_TO_CART_SUCCESS, payload: r.data }))
+//     .catch((e) => dispatch({ type: types.ADD_TO_CART_FAILURE }));
+// };
+
+export const addToCart = (params) => (dispatch)=>{
+
+  dispatch({type:types.ADD_TO_CART_REQUEST})
+ return axios
+  .post("http://localhost:8080/cart",params)
+  .then((r)=>dispatch({type:types.ADD_TO_CART_SUCCESS,payload:r.payload}))
+  .then((r)=>dispatch(getCartData()))
+  .catch((e)=>dispatch({type:types.ADD_TO_CART_FAILURE}))
+}
+
+export const getCartData = () => (dispatch) => {
+
+  dispatch({ type: types.GET_CART_REQUEST});
+ return axios
+    .get("http://localhost:8080/cart")
     .then((r) =>
-      dispatch({ type: types.ADD_TO_CART_SUCCESS, payload: r.payload })
+      dispatch({ type: types.GET_CART_SUCCESS, payload: r.data })
     )
-    .catch((e) => dispatch({ type: types.ADD_TO_CART_FAILURE }));
+    .catch((e) => dispatch({ type: types.GET_CART_FAILURE }));
 };

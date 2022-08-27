@@ -18,6 +18,8 @@ import {
 import Login from "./Login";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+import Cart from "./Cart";
+import { getCartData } from "../Redux/App/actions";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -25,20 +27,16 @@ const Navbar = () => {
   const [ApiData, setApiData] = useState([]);
   const [filteredResults, setFilteredResults] = useState([]);
   const dispatch = useDispatch();
-  const cartData = useSelector( store => store.App.cartData );
-  console.log(cartData)
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:8080/cart")
-      .then((res) => dispatch({ type: "ADD_TO_CART_SUCCESS", payload: res.data }));
-  }, []);
+  const Cart = useSelector(store => store.App.cart)
 
   useEffect(() => {
     axios.get(`http://localhost:8080/product`).then((r) => {
       setApiData(r.data);
     });
-  }, [searchInput]);
+
+    dispatch(getCartData())
+
+  }, [searchInput, getCartData]);
 
   const searchItems = (searchValue) => {
     setSearchInput(searchValue);
@@ -165,10 +163,10 @@ const Navbar = () => {
           w={{ xl: "20px", md: "16px", base: "14px" }}
           alignItems="center"
           justifyContent="center"
-          display={cartData.length === 0 ? "none" : "inline"}
+          // display={cartData.length === 0 ? "none" : "inline"}
         >
-          <Text fontSize="10px" color="white" textAlign='center' >
-            {/* {cartData.length} */}
+          <Text fontSize="10px" color="white" textAlign="center">
+            {Cart.length}
           </Text>
         </Flex>
         <BsCart3 />

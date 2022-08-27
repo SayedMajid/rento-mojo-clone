@@ -1,14 +1,5 @@
 {
-  "cart": [
-    {
-      "title": "Motorized Treadmill AF-515",
-      "price": 2359,
-      "image": "https://p.rmjo.in/productSquare/zo83l86x-500x500.jpg",
-      "category": "treadmills",
-      "deposite": "2509",
-      "id": 1
-    }
-  ],
+  "cart": [],
   "appliances": [
     {
       "id": 300001,
