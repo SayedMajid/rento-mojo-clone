@@ -17,10 +17,12 @@ import {
     InputLeftAddon,
     InputGroup,
     HStack
-  } from '@chakra-ui/react'
+  } from '@chakra-ui/react';
+  import { useToast } from '@chakra-ui/react'
   import { PinInput, PinInputField } from '@chakra-ui/react'
 
   function Login() {
+    const toast = useToast()
    
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [auth,setAuth] = useState(false);
@@ -53,15 +55,24 @@ import {
     const handleOtp = () => {
          
       if(phone.length < 10) {
-        alert('Please Enter Valid phone')
+        alert('Please Enter 10 Digit Valid phone')
        }
        else if(name.length < 4){
         alert("Please enter Valid Name")
        }
        else {
-        if(verify===false) {
-          alert(createOtp())
+        if(verify===false && phone.length >= 10 && name.length >= 4) {
+          toast({
+            title: `Your OTP Is : ${createOtp()}`,
+            description: "Enter This Otp to Login",
+            position: "top",
+            status: 'success',
+            duration: 4000,
+            isClosable: true,
+          })
           setVerify(!verify)
+        }else {
+          alert("Enter All Details")
         }
        }
     }
@@ -71,9 +82,16 @@ import {
       alert('Please Enter Valid OTP')
     }
     if(got == finalOtp.join("")){
-      alert("Login Succeed");
+      toast({
+        title: "Login Succesfull",
+        description: "You are Successfully Logged in",
+        position: "top",
+        status: 'success',
+        duration: 9000,
+        isClosable: true,
+      })
       document.getElementById("top").style.backgroundColor="green";
-      document.getElementById("top").innerText=`Mr. ${name}`
+      document.getElementById("top").innerText=`Mr. ${name}.`
       onClose()
       setVerify(!verify)
       setLogout(true)
@@ -82,7 +100,15 @@ import {
    
 
    const handleLogout = () => {
-    alert("Logged Out");
+    toast({
+      title: "Logout Succesfull",
+      description: `You are Succesfully Logged out from Our Website.`,
+      position: "top",
+      zIndex:"2",
+      status: 'success',
+      duration: 3000,
+      isClosable: true,
+    })
     setLogout(false);
     document.getElementById("top").style.backgroundColor="#dc3226";
       document.getElementById("top").innerText=`Loggin/SignUp`

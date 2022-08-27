@@ -8,8 +8,7 @@ import {
   getDataRequest,
   getDataSuccess,
 } from "../Redux/WFHRahi/actions";
-import { Routes, Route, Link } from "react-router-dom";
-import WfhDetails from "./WfhDetails";
+import { Link } from "react-router-dom";
 
 const Wfh = () => {
   const [furniture, setFurniture] = useState([]);
@@ -87,7 +86,7 @@ const Wfh = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <Box style={{}}>
+              <Box w='80%' m='auto' h='max-content' >
                 <Box>
                   {iswfhLoading ? (
                     <Img
@@ -108,7 +107,7 @@ const Wfh = () => {
                           sm: "2",
                           md: "2",
                           lg: "3",
-                          xl: "3",
+                          xl: "4",
                           base: "1",
                         }}
                         style={{

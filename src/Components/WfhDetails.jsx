@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import {Box,Button,Img, SimpleGrid, Text} from "@chakra-ui/react"
 import { useEffect } from 'react'
 import axios from "axios"
+import prodSlider from '../misc/ProductsPageslider';
+import { useToast } from '@chakra-ui/react'
 
 const WfhDetails = () => {
+  const toast = useToast();
   const [product,SetProduct] = useState({})
   const [loading,setLoading] = useState(false);
   const [error,setError] = useState(false)
   const params = useParams()
+  const [sliderValue, setSliderValue] = useState(0);
+  const navigate=useNavigate()
  
   useEffect(()=> {
     setLoading(true)
@@ -36,8 +41,18 @@ const WfhDetails = () => {
     }
 
     axios.post("http://localhost:8080/cart",payload)
-    .then((res)=> alert("Added"))
-    .catch(()=> alert("Failed"))
+    .then((res)=> {
+      toast({
+        title: 'Item Added to Cart.',
+        description: "This Item has been Added to Your cart.",
+        position: "top",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
+      navigate("/")
+    })
+    .catch(()=> alert("Failed to Add"))
   }
 
   return loading ? (<Img width="15%" style={{marginLeft:"30%"}} src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/cupertino_activity_indicator.gif" />) 
@@ -56,6 +71,7 @@ const WfhDetails = () => {
       
 
       <Box >
+       
         <Box style={{width: "50%",margin:"auto",marginTop:"4%"}}>
           <Text style={{
           fontWeight:"bold"
