@@ -104,7 +104,7 @@ import {
       title: "Logout Succesfull",
       description: `You are Succesfully Logged out from Our Website.`,
       position: "top",
-      zIndex:"2",
+      zIndex:"10",
       status: 'success',
       duration: 3000,
       isClosable: true,

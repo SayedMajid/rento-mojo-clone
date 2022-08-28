@@ -17,28 +17,25 @@ import {
 } from "@chakra-ui/react";
 import Login from "./Login";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { getCartData } from "../Redux/App/actions";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [searchInput, setSearchInput] = useState("");
   const [ApiData, setApiData] = useState([]);
   const [filteredResults, setFilteredResults] = useState([]);
-  const [data, setData] = useState([]);
+  const dispatch = useDispatch();
+  const Cart = useSelector(store => store.App.cart)
 
   useEffect(() => {
-    if (data.length === 0) {
-      axios.get("http://localhost:8080/cart").then((res) => setData(res.data));
-    }
-  }, []);
-
-  console.log(data);
-
-  useEffect(() => {
-    axios.get(`http://localhost:8080/product`).then((r) => {
+    axios.get(`https://json-server-mocker-myapi.herokuapp.com/product`).then((r) => {
       setApiData(r.data);
-      // console.log(r.data)
     });
-  }, [searchInput]);
+
+    dispatch(getCartData())
+
+  }, [searchInput, getCartData]);
 
   const searchItems = (searchValue) => {
     setSearchInput(searchValue);
@@ -50,19 +47,22 @@ const Navbar = () => {
     });
     setFilteredResults(filterdata);
   };
-
   // console.log(searchInput);
   console.log(filteredResults);
 
   return (
     <Flex
-      justifyContent="space-between"
+      justifyContent={{
+        xl: "space-between",
+        md: "space-between",
+        base: "flex-start",
+      }}
       alignItems="center"
       p="10px"
       width="100%"
       gap="10px"
       background="white"
-      zIndex="1"
+      zIndex="9"
       pl={{ base: "5%", md: "", xl: "10%" }}
       pr={{ base: "5%", md: "", xl: "10%" }}
       position="sticky"
@@ -102,22 +102,28 @@ const Navbar = () => {
         className="searchbar"
         direction={"row"}
         border={"1px solid rgba(0,0,0,0.2)"}
-        padding={"0px 15px"}
-        alignItems="center"
+        padding={{ xl: "0 15px", md: "0 15px", base: "10px 10px" }}
+        alignItems={{ xl: "center", md: "center", base: "center" }}
+        // alignItems="center"
         borderRadius={"10px"}
-        display={{ base: "none", md: "inline-flex" }}
+        h={{ xl: "", md: "", base: "auto" }}
+        display={{ base: "inline", md: "inline-flex", xl: "inline" }}
       >
         <Input
           variant={"unstyled"}
           placeholder="Search for products"
           htmlSize={50}
           onChange={(e) => searchItems(e.target.value)}
-          p="10px"
+          p={{ xl: "10px", md: "10px", base: "0px" }}
+          // display={{base:"none"}}
         />
 
         {/* <BsSearch cursor={"pointer"} /> */}
         {filteredResults.length > 0 && (
-          <Box className="abc" display={ searchInput.length === 0 ? "none" : "inline" } >
+          <Box
+            className="abc"
+            display={searchInput.length === 0 ? "none" : "inline"}
+          >
             {filteredResults.map((item) => {
               return (
                 <div className="searchmap">
@@ -134,16 +140,35 @@ const Navbar = () => {
           </Box>
         )}
       </Stack>
-
+      {/* Cart section color #1dbdc0 */}
       <Stack
         direction={"row"}
         alignItems="center"
-        marginRight={20}
+        marginRight={{ xl: 16, md: 16, base: 2 }}
         cursor={"pointer"}
         onClick={() => navigate(`/cart`)}
+        h="50px"
+        w={{ xl: "80px", md: "40px", base: "80px" }}
+        position="relative"
       >
+        <Flex
+          position="absolute"
+          borderRadius="full"
+          top="4%"
+          right="4%"
+          backgroundColor="#1dbdc0"
+          h={{ xl: "20px", md: "16px", base: "14px" }}
+          w={{ xl: "20px", md: "16px", base: "14px" }}
+          justifyContent="center"
+          alignItems="center"
+          display={Cart.length === 0 ? "none" : "inline"}
+        >
+          <Text fontSize="10px" color="white" textAlign="center" mt={{xl:"2px"}}>
+            {Cart.length}
+          </Text>
+        </Flex>
         <BsCart3 />
-        <Text display={{ base: "inline-flex", md: "none", lg: "inline-flex" }}>
+        <Text display={{ base: "none", md: "none", lg: "inline-flex" }}>
           Cart
         </Text>
       </Stack>

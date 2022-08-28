@@ -23,7 +23,7 @@ const Wfh = () => {
   useEffect(() => {
     dispatch(getDataRequest());
     axios
-      .get("http://localhost:8080/wfh_All")
+      .get("https://json-server-mocker-myapi.herokuapp.com/wfh_All")
       .then((res) => dispatch(getDataSuccess(res.data)))
       .catch(() => dispatch(getDataFailure()));
   }, []);
@@ -39,7 +39,7 @@ const Wfh = () => {
   const FurnitureFunction = () => {
     setFurnitureLoading(true);
     axios
-      .get("http://localhost:8080/wfh_Furniture")
+      .get("https://json-server-mocker-myapi.herokuapp.com/wfh_Furniture")
       .then((res) => {
         setFurniture(res.data);
         setFurnitureLoading(false);
@@ -50,7 +50,7 @@ const Wfh = () => {
   const FitnessFunction = () => {
     setFitnessLoading(true);
     axios
-      .get("http://localhost:8080/wfh_Fiteness_Equipment")
+      .get("https://json-server-mocker-myapi.herokuapp.com/wfh_Fiteness_Equipment")
       .then((res) => {
         setFitness(res.data);
         setFitnessLoading(false);
@@ -63,7 +63,7 @@ const Wfh = () => {
   }, []);
 
   return (
-    <Container minW="100%" style={{}}>
+    <Container minW="100%">
       <Box>
         <Img
           width="98%"
@@ -86,7 +86,11 @@ const Wfh = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <Box w='80%' m='auto' h='max-content' >
+              <Box
+                w="80%"
+                m={{ xl: "0 auto 160px", md: "0 auto 200px" , base:"0 auto 1280px" }}
+                h="max-content"
+              >
                 <Box>
                   {iswfhLoading ? (
                     <Img
@@ -237,18 +241,21 @@ const Wfh = () => {
                   src="https://yacht-express.net/wp-content/uploads/2020/12/it-seems-that-something-went-wrong-1-718x602.gif"
                 />
               ) : (
-                <Box>
+                <Box h='max-content' border='1px solid black' >
                   <SimpleGrid
+                    border="1px solid red"
                     columns={{
                       sm: "2",
                       md: "2",
-                      lg: "3",
-                      xl: "3",
+                      lg: "4",
+                      xl: "4",
                       base: "1",
                     }}
                     style={{
                       gap: "2%",
                     }}
+                    w={{ xl: "80%" }}
+                    m={{ xl: "0 auto 100px", md: "0 auto 160px" }}
                   >
                     {furniture &&
                       furniture.map((item) => (
@@ -379,8 +386,8 @@ const Wfh = () => {
                     columns={{
                       sm: "2",
                       md: "2",
-                      lg: "3",
-                      xl: "3",
+                      lg: "4",
+                      xl: "4",
                       base: "1",
                     }}
                     style={{
