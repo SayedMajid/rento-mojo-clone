@@ -23,7 +23,7 @@ const Wfh = () => {
   useEffect(() => {
     dispatch(getDataRequest());
     axios
-      .get("http://localhost:8080/wfh_All")
+      .get("https://json-server-mocker-myapi.herokuapp.com/wfh_All")
       .then((res) => dispatch(getDataSuccess(res.data)))
       .catch(() => dispatch(getDataFailure()));
   }, []);
@@ -39,7 +39,7 @@ const Wfh = () => {
   const FurnitureFunction = () => {
     setFurnitureLoading(true);
     axios
-      .get("http://localhost:8080/wfh_Furniture")
+      .get("https://json-server-mocker-myapi.herokuapp.com/wfh_Furniture")
       .then((res) => {
         setFurniture(res.data);
         setFurnitureLoading(false);
@@ -50,7 +50,7 @@ const Wfh = () => {
   const FitnessFunction = () => {
     setFitnessLoading(true);
     axios
-      .get("http://localhost:8080/wfh_Fiteness_Equipment")
+      .get("https://json-server-mocker-myapi.herokuapp.com/wfh_Fiteness_Equipment")
       .then((res) => {
         setFitness(res.data);
         setFitnessLoading(false);

@@ -18,7 +18,6 @@ import {
 import Login from "./Login";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import Cart from "./Cart";
 import { getCartData } from "../Redux/App/actions";
 
 const Navbar = () => {
@@ -30,7 +29,7 @@ const Navbar = () => {
   const Cart = useSelector(store => store.App.cart)
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/product`).then((r) => {
+    axios.get(`https://json-server-mocker-myapi.herokuapp.com/product`).then((r) => {
       setApiData(r.data);
     });
 

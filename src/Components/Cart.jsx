@@ -22,7 +22,7 @@ const Cart = () => {
 
   const getCart = () => {
     axios
-      .get("http://localhost:8080/cart")
+      .get("https://json-server-mocker-myapi.herokuapp.com/cart")
       .then((res) => setCartData(res.data))
       .catch(() => null);
   };
@@ -33,7 +33,7 @@ const Cart = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8080/cart/${id}`)
+      .delete(`https://json-server-mocker-myapi.herokuapp.com/cart/${id}`)
       .then((res) => {
         getCart();
         toast({
