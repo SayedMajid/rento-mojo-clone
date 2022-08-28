@@ -59,6 +59,7 @@
 <hr/>
 
 #### Deployment Link :
-    - https://rct-211-rentomojo-clone.netlify.app/
+    Netlify - https://rct-211-rentomojo-clone.netlify.app/
+    Vercel - https://bumpy-celery-9793-blthgzd1c-sayedmajid.vercel.app/
 
 
