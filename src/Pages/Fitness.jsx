@@ -246,7 +246,7 @@ import {
               gap={[4, 6, 10]}
             >
               {fitnessData?.map((item) => (
-                <ProductsCard key={item.id} {...item} />
+                <ProductsCard key={item.id} {...item} goTo={"Fitness"} />
               ))}
             </Box>
           </Box>

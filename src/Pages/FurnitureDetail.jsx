@@ -11,52 +11,57 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import ButtonSection from "./ButtonSection";
-import { addToCart, getAppliances } from "../Redux/App/actions";
+import { addToCart, getFurnitureData } from "../Redux/App/actions";
 import Slider from "../misc/ProductsPageslider";
 
-const ApplianceDetail = () => {
+const FurnitureDetail = () => {
   const date = new Date().toLocaleDateString();
   const [sliderValue, setSliderValue] = useState(0);
+
   const dispatch = useDispatch();
   const { id } = useParams();
-  const appliances = useSelector((store) => store.App.appliances);
-  const [currentAppliance, satcurrentAppliannce] = useState({});
 
-  console.log(currentAppliance);
+  const furniture = useSelector((store) => store.App.furniture);
+  const [currentFurniture, setcurrentFurniture] = useState({});
+
+  console.log(currentFurniture);
 
   //persist on reload
 
   useEffect(() => {
-    dispatch(getAppliances());
+    dispatch(getFurnitureData());
   }, []);
 
   //find perticular single data using id
 
   useEffect(() => {
     if (id) {
-      const temp = appliances.find((item) => item.id === Number(id));
-      temp && satcurrentAppliannce(temp);
+      const temp = furniture.find((item) => item.id === Number(id));
+      temp && setcurrentFurniture(temp);
     }
-  }, [appliances, id, location]);
+  }, [furniture, id, location]);
+
 
   //handle cart
 
-  const handleCart = (e) => {
-    const cartparams = {
-      title: currentAppliance.title,
-      price: currentAppliance.price,
-      image: currentAppliance.image,
-      category: currentAppliance.category,
-      deposite: `${Number(currentAppliance.price) + Number(150)}`,
-    };
+  const handleCart=(e)=>{
+    
+   const cartparams={
+      title: currentFurniture.title,
+      price: currentFurniture.price,
+      image: currentFurniture.image,
+      category: currentFurniture.category,
+      deposite: `${Number(currentFurniture.price)+Number(150)}`
+
+    }
     dispatch(addToCart(cartparams));
-  };
+  }
 
   return (
     <div>
       {" "}
       <Box className="App" position="relative">
-        <ButtonSection price={currentAppliance.price} />
+        <ButtonSection price={currentFurniture.price} />
         <Box
           w={{ xl: "100%", md: "88%", base: "90%" }}
           h="auto"
@@ -79,7 +84,7 @@ const ApplianceDetail = () => {
                   fit={"fill"}
                   height={{ base: "400px", md: "500px", xl: "600px" }}
                   width="100%"
-                  src={currentAppliance.image}
+                  src={currentFurniture.image}
                 />
               </Box>
               <Box
@@ -96,9 +101,12 @@ const ApplianceDetail = () => {
                   borderRadius="2px"
                   mb="16px"
                 >
-                  <Flex w="100%" flexDirection="column">
+                  <Flex
+                    w="100%"
+                    flexDirection="column"
+                  >
                     <Text mb="10px" fontSize={"18px"}>
-                      {currentAppliance.title}
+                      {currentFurniture.title}
                     </Text>
                   </Flex>
                   <Text mb="10px" fontSize={"14px"}>
@@ -116,6 +124,8 @@ const ApplianceDetail = () => {
               <Box border="1px solid #e9e9e9 ">
                 {/* //product detail */}
 
+                
+
                 <Flex
                   border="1px solid #e9e9e9"
                   justifyContent={"space-between"}
@@ -124,12 +134,12 @@ const ApplianceDetail = () => {
                   fontWeight={"bold"}
                 >
                   <Flex display={{ base: "block", md: "block", xl: "none" }}>
-                    <Text>&#8377;{currentAppliance.price}/mo</Text>
+                    <Text>&#8377;{currentFurniture.price}/mo</Text>
                     <Text fontSize="10px">Monthly Rent </Text>
                   </Flex>
                   <Flex display={{ base: "block", md: "block", xl: "none" }}>
                     <Text>
-                      &#8377; {Number(currentAppliance.price) + 150}/mo
+                      &#8377; {Number(currentFurniture.price) + 150}/mo
                     </Text>
                     <Text fontSize="10px">Refundable Deposit </Text>
                   </Flex>
@@ -137,13 +147,7 @@ const ApplianceDetail = () => {
 
                 {/* //details of product */}
 
-                <Flex
-                  border="2px solid  #e9e9e9"
-                  justifyContent="center"
-                  gap="20px"
-                  alignItems="center"
-                  p="20px"
-                >
+                <Flex border="2px solid  #e9e9e9" justifyContent="center" gap="20px" alignItems="center" p="20px">
                   <Image
                     src="https://www.rentomojo.com/public/images/icons/virusSafetyGreen.png"
                     width="50px"
@@ -163,24 +167,17 @@ const ApplianceDetail = () => {
                 </Flex>
                 <Flex>
                   <Flex width={{ base: "100%", md: "100%", xl: "60%" }}>
-                    <Image
-                      src={currentAppliance.image}
-                      display={{ base: "none", md: "none", xl: "inline" }}
-                    />
+                    <Image src={currentFurniture.image}  display={{base:"none",md:"none",xl:"inline"}}/>
                   </Flex>
-                  <Flex
-                    direction="column"
-                    p="25px"
-                    width={{ base: "90%", md: "auto", xl: "auto" }}
-                  >
+                  <Flex direction="column" p="25px" width={{base:"90%",md:"auto",xl:"auto"}}>
                     <Text mb="10px" fontSize={"18px"} fontWeight="500">
                       {" "}
-                      {currentAppliance.title}
+                      {currentFurniture.title}
                     </Text>
-                    <Text mb="20px">
+                    <Text mb="20px" >
                       There’s always room for more applices with a{" "}
-                      {currentAppliance.title}. Designed for the modern home and
-                      smart brains, this {currentAppliance.category}{" "}
+                      {currentFurniture.title}. Designed for the modern home and
+                      smart brains, this {currentFurniture.category}{" "}
                       effortlessly reduces the cost of electricity. It reduces
                       your efforts and makes your life easy and entertaining.
                       With best-in-class features, corral your way to your
@@ -252,7 +249,7 @@ const ApplianceDetail = () => {
                   <Text mb="10px" fontSize={"18px"}>
                     {/* current product title */}
 
-                    {currentAppliance.title}
+                    {currentFurniture.title}
                   </Text>
                 </Flex>
                 <Text mb="10px" fontSize={"14px"}>
@@ -274,14 +271,14 @@ const ApplianceDetail = () => {
                     <Flex direction={"column"}>
                       <Text fontSize={"20px"} fontWeight={"500"}>
                         {/* price of the current product */}
-                        &#8377;{currentAppliance.price}/mo
+                        &#8377;{currentFurniture.price}/mo
                       </Text>
                       <Text fontSize="10px">Monthly Rent </Text>
                     </Flex>
                     <Flex direction="column">
                       <Text fontSize="20px" fontWeight="500">
                         {/* current product price + 150 */}
-                        &#8377; {Number(currentAppliance.price) + 150}/mo
+                        &#8377; {Number(currentFurniture.price) + 150}/mo
                       </Text>
                       <Text fontSize="10px">Refundable Deposit </Text>
                     </Flex>
@@ -301,12 +298,7 @@ const ApplianceDetail = () => {
                     <Image src="https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg" />
                     <Text fontSize="10px">Delivery by {date}</Text>
                   </Flex>
-                  <Button
-                    bg="red.500"
-                    color="white"
-                    width={"100%"}
-                    onClick={handleCart}
-                  >
+                  <Button bg="red.500" color="white" width={"100%"} onClick={handleCart}>
                     {/* ADD to Cart button */}
                     Book your Plan
                   </Button>
@@ -350,4 +342,4 @@ const ApplianceDetail = () => {
   );
 };
 
-export default ApplianceDetail;
+export default FurnitureDetail;

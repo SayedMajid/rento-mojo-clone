@@ -11,7 +11,7 @@ import {
   } from "@chakra-ui/react";
   import React, { useEffect, useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
-import { useLocation, useSearchParams } from "react-router-dom";
+  import { useLocation, useSearchParams } from "react-router-dom";
   import ProductsCard from "../misc/ProductsCard";
   import Slider from "../misc/ProductsPageslider";
   import { getFurnitureData } from "../Redux/App/actions";
@@ -19,7 +19,7 @@ import { useLocation, useSearchParams } from "react-router-dom";
   const Furniture = () => {
     const [sliderValue, setSliderValue] = React.useState(0);
     const dispatch = useDispatch();
-
+    const furnitureData = useSelector((store)=> store.App.furniture);
     const location = useLocation();
     const [searchParams, setSearchParams] = useSearchParams();
     const urlCategory = searchParams.getAll("category");
@@ -29,7 +29,6 @@ import { useLocation, useSearchParams } from "react-router-dom";
     const [category, setCategory] = useState(urlCategory || []);
     const [sortby, setSortby] = useState(urlSort || []);
     const [stock, setStock] = useState(urlstock || []);
-    const furnitureData = useSelector((store)=> store.App.furniture);
     
     useEffect(() => {
       if (furnitureData.length === 0 || location.search) {
@@ -74,7 +73,7 @@ import { useLocation, useSearchParams } from "react-router-dom";
       dispatch(getFurnitureData());
     }, [setSearchParams, sortby, category]);
   
-    console.log(furnitureData);
+    // console.log(furnitureData);
     return (
       <>
         <Box>
@@ -251,7 +250,7 @@ import { useLocation, useSearchParams } from "react-router-dom";
               gap={[4, 6, 10]}
             >
               {furnitureData?.map((item) => (
-                <ProductsCard key={item.id} {...item} />
+                <ProductsCard key={item.id} {...item} goTo={"Furniture"}/>
               ))}
             </Box>
           </Box>

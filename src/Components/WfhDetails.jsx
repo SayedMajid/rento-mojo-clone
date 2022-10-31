@@ -17,7 +17,7 @@ const WfhDetails = () => {
  
   useEffect(()=> {
     setLoading(true)
-    axios.get(`http://localhost:8080/wfh_All/${params.id}`)
+    axios.get(`https://json-server-mocker-myapi.herokuapp.com/wfh_All/${params.id}`)
     .then((res)=> {
       SetProduct(res.data)
      setLoading(false)
@@ -29,8 +29,6 @@ const WfhDetails = () => {
   let date = new Date().getDate() ;
   //console.log(date,month,year)
 
-  
-  
 
   const addToCart = () => {
     
@@ -42,7 +40,7 @@ const WfhDetails = () => {
       deposit : `${Number(product.price)+Number(150)}`,
     }
 
-    axios.post("http://localhost:8080/cart",payload)
+    axios.post("https://json-server-mocker-myapi.herokuapp.com/cart",payload)
     .then((res)=> {
       toast({
         title: 'Item Added to Cart.',

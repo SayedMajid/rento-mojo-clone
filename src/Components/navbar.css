@@ -1,0 +1,32 @@
+.abc {
+    padding: 10px;
+    max-height: 250px;
+    overflow: scroll;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    color: black;
+    top: 50px;
+    justify-self: stretch;
+    width: 100%;
+    transition: 700ms ease;
+    box-shadow: 0 4px 6px 1.5px rgba(11, 121, 211, 0.432);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.searchmap{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.searchmap:hover{
+    background-color: #008ecc;
+    color: white;
+}
+.searchbar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 700ms ease;
+}
