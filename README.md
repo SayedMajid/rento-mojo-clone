@@ -1,6 +1,6 @@
 <h1><a href="https://csb-v02nso.netlify.app/">Clone Of Rentomojo.com</a></h1>
 
-<div>Rentomojo is a Website Where Users Can Find Houseware On Rent. like Furniture, Smartphones,</div>
+<div>Clone Of Rentomojo.com: A Team-Collaborative Mern Project, Completed within 5 Days Of Hard Working By 4 Members, Where Users Can Find Houseware Things On Rent, eg: Rooms, Furniture-Things, Laptops, Smartphones, Work From Home Essentials, etc.</div>
 
 
 
@@ -94,25 +94,25 @@
 #### Day 3 --> ( Thursday ) --> 3 Issues, 7 Tasks | Per Individual 
 
     - Abdullah --> 
-    - Majid --> Completed
-    - Narayan --> Completed
-    - Priyanshu --> Completed
-    - Rahim --> Completed
+    - Majid --> 
+    - Narayan --> 
+    - Priyanshu --> 
+    - Rahim --> 
 
 #### Day 4 --> ( Friday ) --> 4 Issues , 8 Task
 
     - Abdullah --> 
-    - Majid --> Completed
-    - Narayan --> Completed
-    - Priyanshu --> Completed
-    - Rahim --> Completed
+    - Majid --> 
+    - Narayan --> 
+    - Priyanshu --> 
+    - Rahim --> 
 
 #### Day 5 --> ( Saturday ) --> 4 Issues ( login, cart Page  ) , 7 Task
 
-    - Abdullah --> Completed
-    - Majid --> Completed
-    - Narayan --> Completed
-    - Priyanshu --> Completed
-    - Rahim --> Completed
+    - Abdullah --> 
+    - Majid --> 
+    - Narayan --> 
+    - Priyanshu --> 
+    - Rahim --> 
 
 <hr/>
