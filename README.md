@@ -20,7 +20,7 @@
 </ul>
 
 
-<h1>Tect Stack</h1>
+<h1>Tech Stack</h1>
 
 <ul>
 <li>React.Js</li>
